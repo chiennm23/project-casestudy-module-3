@@ -21,6 +21,7 @@
             <div class="col-12">
                 <div class="row">
                     <div class="col-12">
+
                         <h1>Danh Sách Phòng</h1>
                     </div>
                     <table class="table table-striped table-hover">
@@ -34,21 +35,24 @@
                             <th></th>
                         </tr>
                         </thead>
+                        <tbody>
                         @foreach($rooms as $key => $room)
                             <tr>
-                                <td>{{++$key}}</td>
+                                <td scope="row">{{++$key}}</td>
                                 <td>{{$room->name}}</td>
                                 <td>{{$room->type}}</td>
                                 <td>{{$room->price}}</td>
+                              
                                 <td>
                                     <a href="{{route('rooms.edit', $room->id)}}" class="btn btn-warning">Edit</a>
                                     <a href="{{route('rooms.delete', $room->id)}}" class="btn btn-danger"
-                                       onclick="return confirm('Bạn chắc chắn muốn xóa?')">Delete</a></td>
+                                       onclick="return confirm('Bạn chắc chắn muốn xóa?')">Delete</a>
+                                </td>
                             </tr>
-                    @endforeach
+                        @endforeach
+                        </tbody>
+                    </table>
                 </div>
-            </div>
-        </div>
-    </div>
+
 @endsection
 

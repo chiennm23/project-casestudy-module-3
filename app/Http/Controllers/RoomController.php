@@ -2,20 +2,27 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Services\RoomService;
 use App\Room;
 use Illuminate\Http\Request;
-use function Sodium\compare;
 
 class RoomController extends Controller
 {
+    protected $roomService;
+
+    public function __construct(RoomService $roomService)
+    {
+        $this->roomService = $roomService;
+    }
+
     public function index()
     {
-        $rooms = Room::all();
+        $rooms = $this->roomService->getAllRoom();
         return view('rooms/list', compact('rooms'));
     }
     public function showMajor()
     {
-        $rooms = Room::all();
+        $rooms = $this->roomService->getAllRoom();
         return view('rooms/major', compact('rooms'));
     }
 
