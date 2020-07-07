@@ -134,7 +134,10 @@
             </div>
         </div>
     </header>
-    @yield('content')
+    <div class="container-fluid">
+        @yield('content')
+    </div>
+
 </div>
 <script src="{{asset('vendors/jquery/dist/jquery.min.js')}}"></script>
 <script src="{{asset('vendors/popper.js/dist/umd/popper.min.js')}}"></script>

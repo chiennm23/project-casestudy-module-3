@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCustomersTable extends Migration
+class AddForeinTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,9 @@ class CreateCustomersTable extends Migration
      */
     public function up()
     {
-        Schema::create('customers', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            $table->integer('idCard');
-            $table->integer('phone');
-            $table->timestamps();
+        Schema::table('bills', function (Blueprint $table) {
+            $table->unsignedBigInteger('room_id')->after('price')->nullable();
+            $table->foreign('room_id')->references('id')->on('rooms');
         });
     }
 
@@ -29,6 +26,8 @@ class CreateCustomersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('customers');
+        Schema::table('bills', function (Blueprint $table) {
+            //
+        });
     }
 }
