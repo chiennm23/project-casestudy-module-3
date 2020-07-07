@@ -20,162 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66d5f738-e805-4d45-8776-013a8e534df6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../.idea/html.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BT-&#10;symmetry/.idea/BT-&#10;symmetry.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BT-DaoNguoc-Stack/.idea/BT-DaoNguoc-Stack.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BT-LinkerList/.idea/BT-LinkerList.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BT-NhiPhan/.idea/BT-NhiPhan.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BT-Phan-SĐT/.idea/BT-Phan-SĐT.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BT-Queue/.idea/BT-Queue.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BT-SquareDance/.idea/BT-SquareDance.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BT-Stack/.idea/BT-Stack.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BT-sx-chen/.idea/BT-sx-chen.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Employee-Manager/.idea/Employee-Manager.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Employee-Manager/Src-class/user-add/UserManager.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Employee-Manager/Src-class/user-add/Users.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Employee-Manager/add/add-user.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Employee-Manager/index-user.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Future_Value_Calculator/.idea/Future_Value_Calculator.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../LibraryDB/.idea/LibraryDB.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../LinkedList/.idea/LinkedList.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PT-bac2/.idea/PT-bac2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Product/.idea/Product.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../TH-PhepChia/.idea/TH-PhepChia.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../TH-try-catch/.idea/TH-try-catch.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../TennisGame/.idea/TennisGame.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../casestudy-module2-test/.idea/casestudy-module2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../currency/.idea/currency.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../customer_list/.idea/customer_list.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../demo -MVC/.idea/demo -MVC.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../demo/.idea/demo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../dictionary/.idea/dictionary.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/Lavavel.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../birthday/.idea/birthday.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../birthday/app/Http/Controllers/BirthdayController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../birthday/resources/views/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../calculator/.idea/calculator.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../calculator/resources/views/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../customer-manager/.idea/customer-manager.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../customer-manager/resources/views/customers/list.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../customer-orm-eloquent/resources/views/cities/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../customer-orm-eloquent/resources/views/cities/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../customer-orm-eloquent/resources/views/cities/list.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../customer-orm-eloquent/resources/views/customers/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../customer-orm-eloquent/resources/views/customers/list.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../customer-orm-eloquent/resources/views/home.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../customer-validation/.idea/customer-validation.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../customer-validation/resources/views/form.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dictionary/.idea/dictionary.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dictionary/resources/views/error.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dictionary/resources/views/search-word.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dictionary/resources/views/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../email-validation/.idea/email-validation.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../email-validation/resources/views/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../greeting/.idea/greeting.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../greeting/resources/views/login.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../greeting/resources/views/welcome-admin.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../i18n/.idea/i18n.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../i18n/resources/lang/en/messages.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../i18n/resources/lang/vi/messages.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jQuery-Ajax/.idea/jQuery.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jQuery-Ajax/AJax/news.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jQuery-Ajax/AJax/news.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jQuery-Ajax/hide-show-animate.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jQuery-Ajax/jquery-ham-tinhnang/ham-jquery.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jQuery-Ajax/jquery-ham-tinhnang/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jQuery-Ajax/jquery-ham-tinhnang/menu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jQuery-Ajax/my-to-do-list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../laravel-blog-i18n/.idea/laravel-blog-i18n.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../laravel-blog-i18n/resources/lang/en/language.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../laravel-blog-i18n/resources/lang/vi/language.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../laravel-blog-i18n/resources/views/blog/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../laravel-blog-i18n/resources/views/blog/list.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../laravel-blog-i18n/resources/views/blog/master.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../laravel-security/.idea/laravel-security.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../laravel-security/public/css/add-demo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../laravel-security/resources/views/layouts/page_admin.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../laravel-security/resources/views/layouts/page_guest.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../login-logout-session/.idea/login-logout-session.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../login-logout-session/public/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../login-logout-session/public/js/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../login-logout-session/resources/views/blogs/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../login-logout-session/resources/views/users/login.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../login/.idea/login.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../orm-eloquent/.idea/orm-eloquent.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../orm-eloquent/resources/views/customer/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../orm-eloquent/resources/views/customer/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../orm-eloquent/resources/views/customer/list.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../orm-eloquent/resources/views/home.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product-discount-caculator/.idea/product-discount-caculator.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product-discount-caculator/resources/views/product.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product-discount-caculator/resources/views/show-discount.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../route-demo/.idea/route-demo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../route-demo/resources/views/home.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../route-demo/resources/views/route-demo.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shopping-cart/.idea/shopping-cart.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shopping-cart/Procfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shopping-cart/public/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shopping-cart/resources/views/cart/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shopping-cart/resources/views/shop/home.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../task_manager/.idea/task_manager.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../task_manager/public/css/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../task_manager/resources/views/home.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../task_manager/resources/views/tasks/add.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../task_manager/resources/views/tasks/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../task_manager/resources/views/tasks/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../task_manager/resources/views/tasks/list.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../triangle-testcase/Triangle.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../triangle-testcase/TriangleTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../validation/.idea/validation.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../validation/resources/views/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../weather-forecasts/.idea/weather-forecasts.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../weather-forecasts/public/css/owl.carousel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../weather-forecasts/public/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../weather-forecasts/public/js/jquery-1.9.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../weather-forecasts/public/js/owl.carousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../weather-forecasts/resources/views/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../layout-demo/.idea/layout-demo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module 2/.idea/module 2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module_test2/.idea/module test 2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module_test2/.idea/module_test2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module_test2/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module_test2/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module_test2/src/Controller/ProductController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module_test2/src/Model/DBConnect.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module_test2/src/Model/ProductBD.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module_test2/src/Model/Products.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module_test2/src/View/add.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module_test2/src/View/core/menu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module_test2/src/View/edit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module_test2/src/View/list.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module_test2/src/View/search.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module_test2/vendor/autoload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../prime/.idea/prime.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../product- manager/.idea/product- manager.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../server_time/.idea/server_time.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../startbootstrap-sb-admin-2-gh-pages/.idea/startbootstrap-sb-admin-2-gh-pages.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test-module2/.idea/test-module2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test-module2/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test-module2/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test-module2/src/Controller/ProductController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test-module2/src/Model/DBConnect.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test-module2/src/Model/ProductDB.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test-module2/src/Model/Products.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test-module2/src/View/add.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test-module2/src/View/core/menu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test-module2/src/View/edit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test-module2/src/View/list.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test-module2/src/View/search.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test-module2/vendor/autoload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/.idea/test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../triangle-testcase/TriangleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/rooms/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/rooms/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/rooms/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -295,6 +151,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -319,6 +178,7 @@
       <option name="presentableId" value="Default" />
       <updated>1594085613841</updated>
       <workItem from="1594085615252" duration="1561000" />
+      <workItem from="1594098973133" duration="631000" />
     </task>
     <servers />
   </component>
@@ -335,6 +195,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="490" y="159" width="424" height="490" key="FileChooserDialogImpl" timestamp="1594087209918">
