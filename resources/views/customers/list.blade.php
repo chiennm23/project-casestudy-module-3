@@ -1,4 +1,4 @@
-@extends('layout/home')
+@extends('layout.home')
 @section('content')
     <div class="col-12">
         <div class="row">

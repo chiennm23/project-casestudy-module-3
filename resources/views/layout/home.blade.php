@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+    <title>{{asset('Toastr.js')}}</title>
+    @toastr_css
 </head>
 <body>
 <aside id="left-panel" class="left-panel">
@@ -51,10 +53,10 @@
                     </ul>
                 </li>
                 <li class="menu-item-has-children dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Forms</a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Customers</a>
                     <ul class="sub-menu children dropdown-menu">
-                        <li><i class="menu-icon fa fa-th"></i><a href="">Basic Form</a></li>
-                        <li><i class="menu-icon fa fa-th"></i><a href="">Advanced Form</a></li>
+                        <li><i class="menu-icon fa fa-th"></i><a href="{{route('customers.index')}}">Danh sách khách hàng</a></li>
+                        <li><i class="menu-icon fa fa-th"></i><a href="{{route('customers.create')}}">Thêm mới khách hàng</a></li>
                     </ul>
                 </li>
             </ul>
@@ -164,6 +166,8 @@
 </script>
 
 </body>
-
+@jquery
+@toastr_js
+@toastr_render
 </html>
 
