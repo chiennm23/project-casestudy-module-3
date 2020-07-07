@@ -17,12 +17,12 @@ class RoomController extends Controller
 
     public function index()
     {
-        $rooms = $this->roomService->getAllRoom();
+        $rooms = $this->roomService->getAll();
         return view('rooms/list', compact('rooms'));
     }
     public function showMajor()
     {
-        $rooms = $this->roomService->getAllRoom();
+        $rooms = $this->roomService->getAll();
         return view('rooms/major', compact('rooms'));
     }
 
