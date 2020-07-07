@@ -32,8 +32,10 @@
                         <hr/>
                         <p class="text-light">{{$room->price}}</p>
                         <hr>
-                        <div>
-                            <a class="btn btn-secondary btn-lg btn-block" href="{{route('rooms.create')}}">Đặt Phòng</a>
+                        <div class="row">
+                            <div>
+                                <a class="btn btn-danger" href="#">Đặt Phòng</a>
+                            </div>
                         </div>
                     </div>
                 </div>
