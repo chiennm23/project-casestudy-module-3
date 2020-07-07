@@ -18,32 +18,40 @@
             </div>
         </div>
         <div class="content mt-3">
-            @foreach($rooms as $key => $room)
-                <div class="col-sm-6 col-lg-3">
-                    <div class="card text-white bg-flat-color-1">
-                        <div class="card-body pb-0">
-                            <div class="dropdown float-right">
-                            </div>
-                            <h4 class="mb-0">
-                                <span class="count">{{$room->name}}--{{$room->type}}</span>
-                                <hr>
-                                <p class="text-light">{{$room->status}}</p>
-                            </h4>
-                            <hr/>
-                            <p class="text-light">{{$room->price}}</p>
-                            <hr>
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <a class="btn btn-warning float-left" href="{{route('rooms.edit', $room->id)}}">Edit</a>
-                                </div>
-                                <div class="col-sm-8">
-                                    <a class="btn btn-danger float-right" href="#">Delete</a>
-                                </div>
-                            </div>
-                        </div>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>Danh Sách Tỉnh</h1>
                     </div>
+                    <table class="table table-striped table table-hover">
+                        <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Tên Phòng</th>
+                            <th scope="col">Loại phòng</th>
+                            <th scope="col">Giá Phòng</th>
+                            <th scope="col">Trạng Thái</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        @foreach($rooms as $key => $room)
+                            <tr>
+                                <td scope="row">{{++$key}}</td>
+                                <td>{{$room->name}}</td>
+                                <td>{{$room->type}}</td>
+                                <td>{{$room->price}}</td>
+                                <td>{{$room->price}}</td>
+                                <td>
+                                    <a href="{{route('rooms.edit', $room->id)}}" class="btn btn-warning">Edit</a>
+                                    <a href="{{route('rooms.delete', $room->id)}}" class="btn btn-danger"
+                                       onclick="return confirm('Bạn chắc chắn muốn xóa?')">Delete</a>
+                                </td>
+                            </tr>
+                        @endforeach
+                        </tbody>
+                    </table>
                 </div>
-            @endforeach
-        </div>
 @endsection
 
