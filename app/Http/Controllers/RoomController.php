@@ -54,4 +54,10 @@ class RoomController extends Controller
         return redirect()->route('rooms.major');
     }
 
+    public function delete($id)
+    {
+        $room = Room::findOrFail($id);
+        $room->delete();
+        return redirect()->route('rooms.major');
+    }
 }
