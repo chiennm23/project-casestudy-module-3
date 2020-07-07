@@ -49,6 +49,13 @@ class CustomerController extends Controller
         $customer->save();
         toastr()->success('Chỉnh sửa khách hàng thành công');
         return redirect()->route('customers.index');
+    }
 
+    public function destroy($id)
+    {
+        $customer = Customer::findOrFail($id);
+        $customer->delete();
+        toastr()->success('Xoá khách hàng thành công');
+        return redirect()->route('customers.index');
     }
 }
