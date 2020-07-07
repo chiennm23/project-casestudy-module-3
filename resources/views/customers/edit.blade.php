@@ -22,19 +22,6 @@
                         <input type="text" class="form-control" name="phone" placeholder="Enter phone"
                                value="{{$customer->phone}}">
                     </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Room</label>
-                        <select class="form-control" name="room">
-                            @foreach($rooms as $room)
-                                <option
-                                    @if($customer->room_id==$room->id)
-                                    {{'selected'}}
-                                    @endif
-                                    value="{{ $room->id }}">{{ $room->name }}
-                                </option>
-                            @endforeach
-                        </select>
-                    </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                     <button class="btn btn-secondary" onclick="window.history.go(-1); return false;">Cancel</button>
                 </form>

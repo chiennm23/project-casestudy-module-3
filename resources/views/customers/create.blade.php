@@ -14,19 +14,11 @@
                     </div>
                     <div class="form-group">
                         <label>CMND</label>
-                        <textarea class="form-control" name="card" placeholder="Enter CMND"></textarea>
+                        <input class="form-control" name="card" placeholder="Vd: 151712241">
                     </div>
                     <div class="form-group">
                         <label >Số Điên Thoại</label>
-                        <input type="text" class="form-control" name="phone" placeholder="Enter phone">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Room</label>
-                        <select class="form-control" name="room">
-                            @foreach($rooms as $room)
-                                <option value="{{ $room->id }}">{{ $room->name }}</option>
-                            @endforeach
-                        </select>
+                        <input type="text" class="form-control" name="phone" placeholder="Vd: 0xxxxxxxxx">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                     <button class="btn btn-secondary" onclick="window.history.go(-1); return false;">Cancel</button>

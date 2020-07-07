@@ -26,7 +26,6 @@ class CustomerController extends Controller
         $customer->name = $request->name;
         $customer->idCard = $request->card;
         $customer->phone = $request->phone;
-        $customer->room_id = $request->room;
         $customer->save();
         toastr()->success('Thêm khách hàng thành công');
         return redirect()->route('customers.index');
@@ -45,7 +44,6 @@ class CustomerController extends Controller
         $customer->name = $request->name;
         $customer->idCard = $request->card;
         $customer->phone = $request->phone;
-        $customer->room_id = $request->room;
         $customer->save();
         toastr()->success('Chỉnh sửa khách hàng thành công');
         return redirect()->route('customers.index');
