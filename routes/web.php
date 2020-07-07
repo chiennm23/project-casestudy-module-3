@@ -37,7 +37,22 @@ Route::middleware('auth')->group(function () {
     });
 
 });
+<<<<<<< HEAD
+Route::prefix('customers')->group(function () {
+    Route::get('/','CustomerController@index')->name('customers.index');
+    Route::get('/create','CustomerController@create')->name('customers.create');
+    Route::post('/create','CustomerController@store')->name('customers.store');
+    Route::get('/{id}/edit','CustomerController@edit')->name('customers.edit');
+    Route::post('/{id}/edit','CustomerController@update')->name('customers.update');
+    Route::get('/{id}/destroy','CustomerController@destroy')->name('customers.destroy');
+});
+
+Route::prefix('booking')->group(function (){
+    Route::get('/', 'BookRoomController@show')->name('booking.show');
+});
+=======
 
 
 
 
+>>>>>>> e0d1088cd8384a9414a058e64c1c6b2411efa46b
