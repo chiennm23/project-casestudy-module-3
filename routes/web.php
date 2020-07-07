@@ -29,4 +29,5 @@ Route::prefix('customers')->group(function () {
     Route::post('/create','CustomerController@store')->name('customers.store');
     Route::get('/{id}/edit','CustomerController@edit')->name('customers.edit');
     Route::post('/{id}/edit','CustomerController@update')->name('customers.update');
+    Route::get('/{id}/destroy','CustomerController@destroy')->name('customers.destroy');
 });

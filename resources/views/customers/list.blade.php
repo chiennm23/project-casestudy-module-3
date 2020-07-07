@@ -32,7 +32,7 @@
                                 @endif
                             </td>
                             <td>
-                                <a href="" class="btn btn-danger"
+                                <a href="{{route('customers.destroy',$customer->id)}}" class="btn btn-danger"
                                    onclick="return confirm('Bạn chắc chắn muốn xóa?')">Delete</a>
                                 <a href="{{route('customers.edit',$customer->id)}}" class="btn btn-primary">Edit</a>
                             </td>
