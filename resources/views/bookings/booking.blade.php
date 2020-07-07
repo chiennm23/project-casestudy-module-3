@@ -11,11 +11,14 @@
                 </form>
             </table>
         </div>
-        <div class="col-12 col-md-6">
-            <h2>Booking Room</h2>
-            <table>
-
-            </table>
+        <div class="col-12 col-md-12">
+            <div class="col-12 col-md-6">
+                <div class="col-12 col-md-4">Khách hàng</div>
+                <div class="col-12 col-md-8">
+                    <input class="form-control mr-sm-2" type="text">
+                    <button class="btn btn-outline-success my-2 my-sm-0">Tìm Kiếm</button>
+                </div>
+            </div>
         </div>
     </div>
 </div>
