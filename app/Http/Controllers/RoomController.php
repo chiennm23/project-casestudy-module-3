@@ -20,7 +20,7 @@ class RoomController extends Controller
         $rooms = $this->roomService->getAll();
         return view('rooms/list', compact('rooms'));
     }
-  
+
     public function showMajor()
     {
         $rooms = $this->roomService->getAll();
@@ -66,6 +66,7 @@ class RoomController extends Controller
     {
         $room = Room::findOrFail($id);
         $room->delete();
+        toastr()->success('Xoá phòng thành công!');
         return redirect()->route('rooms.major');
     }
 }
