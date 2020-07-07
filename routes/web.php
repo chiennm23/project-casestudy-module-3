@@ -34,3 +34,7 @@ Route::prefix('customers')->group(function () {
     Route::post('/{id}/edit','CustomerController@update')->name('customers.update');
     Route::get('/{id}/destroy','CustomerController@destroy')->name('customers.destroy');
 });
+
+Route::prefix('booking')->group(function (){
+    Route::get('/', 'BookRoomController@show')->name('booking.show');
+});
