@@ -16,6 +16,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('layout.home');
 });
+
+
+Route::prefix('customers')->group(function () {
+    Route::get('/','CustomerController@index')->name('customers.index');
+});
+
+
 Route::prefix('room')->group(function (){
     Route::get('/list','RoomController@index')->name('room_list');
 });
