@@ -6,8 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Customer extends Model
 {
-    public function room()
+    public function rooms()
     {
-        return $this->belongsTo('App\Room','room_id','id');
+        return $this->belongsToMany('App\Room','detail','customer_id','room_id');
     }
 }

@@ -20,6 +20,7 @@ class RoomController extends Controller
         $rooms = $this->roomService->getAllRoom();
         return view('rooms/list', compact('rooms'));
     }
+  
     public function showMajor()
     {
         $rooms = $this->roomService->getAllRoom();
