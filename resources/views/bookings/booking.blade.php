@@ -6,18 +6,19 @@
             <div class="box">
                 <div class="box-header">
                     <h4>Booking Room</h4>
+                    <hr>
                 </div>
                 <div class="box-body">
                     <div class="row">
                         <div class="col-12 col-md-12 mt-3">
                             <h4>Các bước đặt phòng cho khách</h4>
                         </div>
-                        <div class="col-12 col-md-12 m-3">
+                        <div class="col-12 col-md-12 m-3 pl-5">
                             <ol>
                                 <li>Nếu là khách hàng mới: vào "Quản lý khách hàng" -> "Thêm khách hàng".</li>
-                                <li>"Tìm kiếm khách hàng" tại "Người mượn".</li>
-                                <li>Nhấn "Thêm sách" và chọn các cuốn sách tại "Sách". Nhấn "Đóng".</li>
-                                <li>Điều chỉnh "tình trạng" và "ngày trả (dự kiến)" nếu cần thiết.</li>
+                                <li>"Tìm kiếm khách hàng" tại "Người đặt".</li>
+                                <li>Nhấn "Thêm phòng" và chọn phòng đang trống.</li>
+                                <li>Điều chỉnh "tình trạng" và "thời gian đặt và trả phòng".</li>
                                 <li>Nhấn "Lưu".</li>
                             </ol>
                         </div>
