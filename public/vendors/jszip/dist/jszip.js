@@ -3454,8 +3454,8 @@ exports.prepareContent = function(name, inputData, isBinary, isOptimizedBinarySt
 
     // if inputData is already a promise, this flatten it.
     var promise = external.Promise.resolve(inputData).then(function(data) {
-        
-        
+
+
         var isBlob = support.blob && (data instanceof Blob || ['[object File]', '[object Blob]'].indexOf(Object.prototype.toString.call(data)) !== -1);
 
         if (isBlob && typeof FileReader !== "undefined") {
@@ -4314,7 +4314,7 @@ $export.P = 8;   // proto
 $export.B = 16;  // bind
 $export.W = 32;  // wrap
 $export.U = 64;  // safe
-$export.R = 128; // real proto method for `library` 
+$export.R = 128; // real proto method for `library`
 module.exports = $export;
 },{"./_core":40,"./_ctx":41,"./_global":46,"./_hide":47}],45:[function(require,module,exports){
 module.exports = function(exec){
@@ -6307,7 +6307,7 @@ function put_byte(s, b) {
 
 /* =========================================================================
  * Put a short in the pending buffer. The 16-bit value is put in MSB order.
- * IN assertion: the stream state is correct and there is enough room in
+ * IN assertion: the stream state is correct and there is enough rooms in
  * pending_buf.
  */
 function putShortMSB(s, b) {
@@ -6497,7 +6497,7 @@ function fill_window(s) {
 
 
     /* If the window is almost full and there is insufficient lookahead,
-     * move the upper half to the lower one to make room in the upper half.
+     * move the upper half to the lower one to make rooms in the upper half.
      */
     if (s.strstart >= _w_size + (_w_size - MIN_LOOKAHEAD)) {
 
@@ -6616,7 +6616,7 @@ function fill_window(s) {
 //  }
 //
 //  Assert((ulg)s->strstart <= s->window_size - MIN_LOOKAHEAD,
-//    "not enough room for search");
+//    "not enough rooms for search");
 }
 
 /* ===========================================================================
@@ -10547,7 +10547,7 @@ function d_code(dist) {
 
 /* ===========================================================================
  * Output a short LSB first on the stream.
- * IN assertion: there is enough room in pendingBuf.
+ * IN assertion: there is enough rooms in pendingBuf.
  */
 function put_short(s, w) {
 //    put_byte(s, (uch)((w) & 0xff));
