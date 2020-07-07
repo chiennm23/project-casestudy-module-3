@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="{{asset('vendors/selectFX/css/cs-skin-elastic.css')}}">
     <link rel="stylesheet" href="{{asset('vendors/jqvmap/dist/jqvmap.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -33,7 +34,7 @@
         </div>
         <div id="main-menu" class="main-menu collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <h3 class="menu-title">UI elements</h3>
+                <h3 class="menu-title">CodeGym Hotel</h3>
                 <li class="menu-item-has-children dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-laptop"></i>Components</a>
                     <ul class="sub-menu children dropdown-menu">
@@ -140,113 +141,7 @@
             </div>
         </div>
     </div>
-    <div class="content mt-3">
-        <div class="col-sm-6 col-lg-3">
-            <div class="card text-white bg-flat-color-1">
-                <div class="card-body pb-0">
-                    <div class="dropdown float-right">
-                        <button class="btn bg-transparent dropdown-toggle theme-toggle text-light" type="button" id="dropdownMenuButton1" data-toggle="dropdown">
-                            <i class="fa fa-cog"></i>
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <div class="dropdown-menu-content">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </div>
-                    </div>
-                    <h4 class="mb-0">
-                        <span class="count">10468</span>
-                    </h4>
-                    <p class="text-light">Members online</p>
-
-                    <div class="chart-wrapper px-0" style="height:70px;" height="70">
-                        <canvas id="widgetChart1"></canvas>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-        <div class="col-sm-6 col-lg-3">
-            <div class="card text-white bg-flat-color-2">
-                <div class="card-body pb-0">
-                    <div class="dropdown float-right">
-                        <button class="btn bg-transparent dropdown-toggle theme-toggle text-light" type="button" id="dropdownMenuButton2" data-toggle="dropdown">
-                            <i class="fa fa-cog"></i>
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                            <div class="dropdown-menu-content">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </div>
-                    </div>
-                    <h4 class="mb-0">
-                        <span class="count">10468</span>
-                    </h4>
-                    <p class="text-light">Members online</p>
-                    <div class="chart-wrapper px-0" style="height:70px;" height="70">
-                        <canvas id="widgetChart2"></canvas>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6 col-lg-3">
-            <div class="card text-white bg-flat-color-3">
-                <div class="card-body pb-0">
-                    <div class="dropdown float-right">
-                        <button class="btn bg-transparent dropdown-toggle theme-toggle text-light" type="button" id="dropdownMenuButton3" data-toggle="dropdown">
-                            <i class="fa fa-cog"></i>
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
-                            <div class="dropdown-menu-content">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </div>
-                    </div>
-                    <h4 class="mb-0">
-                        <span class="count">10468</span>
-                    </h4>
-                    <p class="text-light">Members online</p>
-                </div>
-                <div class="chart-wrapper px-0" style="height:70px;" height="70">
-                    <canvas id="widgetChart3"></canvas>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6 col-lg-3">
-            <div class="card text-white bg-flat-color-4">
-                <div class="card-body pb-0">
-                    <div class="dropdown float-right">
-                        <button class="btn bg-transparent dropdown-toggle theme-toggle text-light" type="button" id="dropdownMenuButton4" data-toggle="dropdown">
-                            <i class="fa fa-cog"></i>
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
-                            <div class="dropdown-menu-content">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </div>
-                    </div>
-                    <h4 class="mb-0">
-                        <span class="count">10468</span>
-                    </h4>
-                    <p class="text-light">Members online</p>
-
-                    <div class="chart-wrapper px-3" style="height:70px;" height="70">
-                        <canvas id="widgetChart4"></canvas>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
+    @yield('content')
 </div>
 <script src="{{asset('vendors/jquery/dist/jquery.min.js')}}"></script>
 <script src="{{asset('vendors/popper.js/dist/umd/popper.min.js')}}"></script>
