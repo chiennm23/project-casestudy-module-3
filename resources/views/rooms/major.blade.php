@@ -21,16 +21,16 @@
             <div class="col-12">
                 <div class="row">
                     <div class="col-12">
-                        <h1>Danh Sách Tỉnh</h1>
+
+                        <h1>Danh Sách Phòng</h1>
                     </div>
-                    <table class="table table-striped table table-hover">
+                    <table class="table table-striped table-hover">
                         <thead>
                         <tr>
                             <th scope="col">#</th>
                             <th scope="col">Tên Phòng</th>
-                            <th scope="col">Loại phòng</th>
+                            <th scope="col">Loại Phòng</th>
                             <th scope="col">Giá Phòng</th>
-                            <th scope="col">Trạng Thái</th>
                             <th></th>
                             <th></th>
                         </tr>
@@ -42,7 +42,7 @@
                                 <td>{{$room->name}}</td>
                                 <td>{{$room->type}}</td>
                                 <td>{{$room->price}}</td>
-                                <td>{{$room->price}}</td>
+                              
                                 <td>
                                     <a href="{{route('rooms.edit', $room->id)}}" class="btn btn-warning">Edit</a>
                                     <a href="{{route('rooms.delete', $room->id)}}" class="btn btn-danger"
@@ -53,5 +53,6 @@
                         </tbody>
                     </table>
                 </div>
+
 @endsection
 

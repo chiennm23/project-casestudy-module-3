@@ -67,5 +67,4 @@ class RoomController extends Controller
         $room->delete();
         return redirect()->route('rooms.major');
     }
-
 }

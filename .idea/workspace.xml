@@ -23,7 +23,7 @@
       <change afterPath="$PROJECT_DIR$/app/Http/Repositories/RoomRepository.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/Http/Services/RoomService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RoomController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RoomController.php" afterDir="false" />
+     <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RoomController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RoomController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/rooms/major.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/rooms/major.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -180,7 +180,8 @@
       <option name="presentableId" value="Default" />
       <updated>1594085613841</updated>
       <workItem from="1594085615252" duration="1561000" />
-      <workItem from="1594098973133" duration="7273000" />
+
+      <workItem from="1594098973133" duration="8348000" />
     </task>
     <servers />
   </component>
