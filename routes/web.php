@@ -18,9 +18,10 @@ Route::get('/', function () {
 });
 Route::prefix('rooms')->group(function (){
     Route::get('/','RoomController@index')->name('rooms.index');
+    Route::get('/major','RoomController@showMajor')->name('rooms.major');
     Route::get('/create','RoomController@create')->name('rooms.create');
     Route::post('/create','RoomController@store')->name('rooms.store');
-//    Route::get('/{id}/edit','RoomController@edit')->name('rooms.edit');
+    Route::get('/{id}/edit','RoomController@edit')->name('rooms.edit');
 //    Route::post('/{id}/edit','RoomController@update')->name('rooms.update');
 });
 Route::prefix('customers')->group(function () {

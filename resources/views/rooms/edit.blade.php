@@ -26,6 +26,7 @@
             </div>
             <div class="form-group">
                 <label>Tình Trạng</label>
+                <input type="text" class="form-control" name="status" placeholder="Đang Trống" value="{{$room->status}}">
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
