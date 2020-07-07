@@ -10,7 +10,7 @@
         </div>
     </div>
     <div class="col-12 ml-10">
-        <form method="post" action="{{route('rooms.store')}}">
+        <form method="post" action="{{route('rooms.update', $room->id)}}">
             @csrf
             <div class="form-group">
                 <label>Tên</label>
@@ -18,7 +18,7 @@
             </div>
             <div class="form-group">
                 <label>Loại Phòng</label>
-                <input type="text" class="form-control" name="type" placeholder="Loại Phòng"value="{{$room->type}}">
+                <input type="text" class="form-control" name="type" placeholder="Loại Phòng" value="{{$room->type}}">
             </div>
             <div class="form-group">
                 <label>Giá Phòng</label>
