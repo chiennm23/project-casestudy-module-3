@@ -20,7 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66d5f738-e805-4d45-8776-013a8e534df6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/rooms/major.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/project-casestudy-module-3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project-casestudy-module-3.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -28,7 +27,6 @@
       <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layout/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/rooms/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/rooms/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/rooms/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/rooms/list.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -184,7 +182,7 @@
       <option name="presentableId" value="Default" />
       <updated>1594085613841</updated>
       <workItem from="1594085615252" duration="1561000" />
-      <workItem from="1594098973133" duration="3074000" />
+      <workItem from="1594098973133" duration="4103000" />
     </task>
     <servers />
   </component>

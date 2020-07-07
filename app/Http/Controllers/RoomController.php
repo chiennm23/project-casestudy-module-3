@@ -50,7 +50,8 @@ class RoomController extends Controller
         $room->price = $request->price;
         $room->status = $request->status;
         $room->save();
-        return redirect('rooms/major', compact('room'));
+        toastr()->success('Chỉnh sửa thành công!');
+        return redirect()->route('rooms.major');
     }
 
 }
