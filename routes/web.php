@@ -23,6 +23,7 @@ Route::prefix('rooms')->group(function (){
     Route::post('/create','RoomController@store')->name('rooms.store');
     Route::get('/{id}/edit','RoomController@edit')->name('rooms.edit');
     Route::post('/{id}/edit','RoomController@update')->name('rooms.update');
+    Route::get('/{id}/delele','RoomController@delete')->name('rooms.delete');
 });
 Route::prefix('customers')->group(function () {
     Route::get('/','CustomerController@index')->name('customers.index');
