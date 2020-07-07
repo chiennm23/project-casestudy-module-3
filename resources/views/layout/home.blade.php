@@ -59,6 +59,9 @@
                         <li><i class="menu-icon fa fa-th"></i><a href="{{route('customers.create')}}">Thêm mới khách hàng</a></li>
                     </ul>
                 </li>
+                <li class="menu-item-has-children dropdown">
+                    <a href="{{route('rooms.major')}}" class="dropdown-toggle"> <i class="menu-icon fa fa-th"></i>Majors</a>
+                </li>
             </ul>
         </div>
     </nav>

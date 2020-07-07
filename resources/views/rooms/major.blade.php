@@ -2,10 +2,17 @@
 @section('content')
     <div class="breadcrumbs">
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-4">
                 <div class="page-header float-left">
                     <div class="page-title">
-                        <h1>Rooms</h1>
+                        <h1>Room // Major</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="page-header float-right">
+                    <div class="page-title">
+                        <a class="btn btn-primary mt-2" href="{{route('rooms.create')}}">Thêm Mới</a>
                     </div>
                 </div>
             </div>
@@ -26,8 +33,11 @@
                             <p class="text-light">{{$room->price}}</p>
                             <hr>
                             <div class="row">
-                                <div>
-                                    <a class="btn btn-danger" href="#">Đặt Phòng</a>
+                                <div class="col-sm-4">
+                                    <a class="btn btn-warning float-left" href="{{route('rooms.edit', $room->id)}}">Edit</a>
+                                </div>
+                                <div class="col-sm-8">
+                                    <a class="btn btn-danger float-right" href="#">Delete</a>
                                 </div>
                             </div>
                         </div>
@@ -36,3 +46,4 @@
             @endforeach
         </div>
 @endsection
+
