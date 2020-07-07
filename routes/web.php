@@ -21,3 +21,6 @@ Route::prefix('rooms')->group(function (){
     Route::get('/create','RoomController@create')->name('rooms.create');
     Route::post('/create','RoomController@store')->name('rooms.store');
 });
+Route::prefix('customers')->group(function () {
+    Route::get('/','CustomerController@index')->name('customers.index');
+});
