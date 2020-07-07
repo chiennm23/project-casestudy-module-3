@@ -20,7 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66d5f738-e805-4d45-8776-013a8e534df6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/bookings/booking.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/rooms/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/rooms/list.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
@@ -178,7 +177,7 @@
       <option name="presentableId" value="Default" />
       <updated>1594085613841</updated>
       <workItem from="1594085615252" duration="1561000" />
-      <workItem from="1594098973133" duration="14861000" />
+      <workItem from="1594098973133" duration="15180000" />
     </task>
     <servers />
   </component>
