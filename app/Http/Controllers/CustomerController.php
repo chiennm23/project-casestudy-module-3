@@ -16,12 +16,19 @@ class CustomerController extends Controller
 
     public function create()
     {
-        $rooms= Room::all();
-        return view('customers.create',compact('rooms'));
+        $rooms = Room::all();
+        return view('customers.create', compact('rooms'));
     }
 
-    public function store()
+    public function store(Request $request)
     {
-
+        $customer = new Customer();
+        $customer->name= $request->name;
+        $customer->idCard= $request->card;
+        $customer->phone= $request->phone;
+        $customer->room_id= $request->room;
+        $customer->save();
+        toastr()->success('Thêm khách hàng thành công');
+        return redirect()->route('customers.index');
     }
 }
