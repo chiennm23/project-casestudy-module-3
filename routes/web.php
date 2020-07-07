@@ -16,6 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('layout.home');
 });
-Route::prefix('room')->group(function (){
-    Route::get('/list','RoomController@index')->name('room_list');
+Route::prefix('rooms')->group(function (){
+    Route::get('/','RoomController@index')->name('rooms.index');
+    Route::get('/create','RoomController@create')->name('rooms.create');
+    Route::post('/create','RoomController@store')->name('rooms.store');
 });
