@@ -19,7 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66d5f738-e805-4d45-8776-013a8e534df6" name="Default Changelist" comment="">
+    <list default="true" id="66d5f738-e805-4d45-8776-013a8e534df6" name="Default Changelist" comment=""><<<<<<< login
+
       <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ConfirmPasswordController.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ForgotPasswordController.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
@@ -49,6 +50,8 @@
       <change beforePath="$PROJECT_DIR$/resources/views/customers/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customers/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/customers/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customers/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+
+   
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +61,7 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
-  </component>
+  </component><<<<<<< login<<<<<<< login
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -88,7 +91,7 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/type" />
       <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
       <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
-      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" /><<<<<<< login
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
       <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
@@ -205,8 +208,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1594085613841</updated>
-      <workItem from="1594085615252" duration="1561000" />
+     
+
       <workItem from="1594098973133" duration="8348000" />
+      <workItem from="1594098973133" duration="10556000" />
     </task>
     <servers />
   </component>
@@ -251,9 +256,10 @@
     </state>
     <state width="1870" height="272" key="GridCell.Tab.0.right/0.0.1920.1046@0.0.1920.1046" timestamp="1594114387517" />
     <state x="413" y="131" width="579" height="546" key="NewPhpClassDialog" timestamp="1594104708414">
+
       <screen x="49" y="34" width="1317" height="734" />
     </state>
-    <state x="413" y="131" width="579" height="546" key="NewPhpClassDialog/49.34.1317.734@49.34.1317.734" timestamp="1594104708414" />
+    <state x="413" y="131" width="579" height="546" key="NewPhpClassDialog/49.34.1317.734@49.34.1317.734" timestamp="1594111977772" />
     <state x="543" y="327" width="319" height="153" key="NewPhpFileDialog" timestamp="1594101057951">
       <screen x="49" y="34" width="1317" height="734" />
     </state>
