@@ -6,9 +6,10 @@ namespace App\Http\Repositories;
 
 use App\Room;
 
+
+
 class RoomRepository
 {
-
     protected $room;
 
     public function __construct(Room $room)
@@ -20,4 +21,5 @@ class RoomRepository
     {
         return $this->room->all();
     }
+
 }

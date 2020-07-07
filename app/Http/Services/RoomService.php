@@ -11,13 +11,12 @@ class RoomService
 
     protected $roomRepo;
 
-
     public function __construct(RoomRepository $roomRepo)
     {
         $this->roomRepo = $roomRepo;
     }
 
-    public function getAllRoom()
+    public function getAll()
     {
         return $this->roomRepo->getAll();
     }
