@@ -14,11 +14,11 @@
             @csrf
             <div class="form-group">
                 <label>Tên</label>
-                <input type="text" class="form-control" name="name" placeholder="Name Room" value="{{$room->name}}">
+                <input type="text" class="form-control" name="name" placeholder="Name Room" value="{{$room->name}}" readonly>
             </div>
             <div class="form-group">
                 <label>Loại Phòng</label>
-                <input type="text" class="form-control" name="type" placeholder="Loại Phòng" value="{{$room->type}}">
+                <input type="text" class="form-control" name="type" placeholder="Loại Phòng" value="{{$room->type}}" readonly>
             </div>
             <div class="form-group">
                 <label>Giá Phòng</label>
@@ -26,7 +26,11 @@
             </div>
             <div class="form-group">
                 <label>Tình Trạng</label>
-                <input type="text" class="form-control" name="status" placeholder="Đang Trống" value="{{$room->status}}">
+                <select name="status" class="form-control">
+                    <option>Đang trống</option>
+                    <option>Đang sửa chữa</option>
+                    <option>Đang vệ sinh</option>
+                </select>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>

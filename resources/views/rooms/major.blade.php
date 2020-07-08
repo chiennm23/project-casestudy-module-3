@@ -30,7 +30,7 @@
                             <th scope="col">#</th>
                             <th scope="col">Tên Phòng</th>
                             <th scope="col">Loại Phòng</th>
-                            <th scope="col">Giá Phòng</th>
+                            <th scope="col">Tình Trang</th>
                             <th></th>
                             <th></th>
                         </tr>
@@ -41,7 +41,7 @@
                                 <td scope="row">{{++$key}}</td>
                                 <td>{{$room->name}}</td>
                                 <td>{{$room->type}}</td>
-                                <td>{{$room->price}}</td>
+                                <td>{{$room->status}}</td>
                                 <td>
                                     <a href="{{route('rooms.edit', $room->id)}}" class="btn btn-warning">Edit</a>
                                     <a href="{{route('rooms.delete', $room->id)}}" class="btn btn-danger"
