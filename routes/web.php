@@ -38,7 +38,6 @@ Route::middleware('auth')->group(function () {
 
 });
 
-
 Route::prefix('booking')->group(function (){
     Route::get('/', 'BookRoomController@show')->name('booking.show');
 });
