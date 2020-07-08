@@ -36,9 +36,11 @@ Route::middleware('auth')->group(function () {
         Route::get('/{id}/destroy', 'CustomerController@destroy')->name('customers.destroy');
     });
 
+    Route::prefix('booking')->group(function (){
+        Route::get('/{id}/create', 'BookRoomController@index')->name('booking.index');
+    });
+
+
 });
 
-Route::prefix('booking')->group(function (){
-    Route::get('/', 'BookRoomController@show')->name('booking.show');
-});
 
