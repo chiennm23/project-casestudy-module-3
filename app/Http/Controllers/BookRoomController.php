@@ -37,7 +37,9 @@ class BookRoomController extends Controller
         $room->status = $request->status;
         $room->price = $request->price;
         $room->save();
+
         $room->customers()->attach($customer->id);
+        toastr()->success('Đặt phòng thành công');
         return redirect()->route('rooms.index');
 
     }
