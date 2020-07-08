@@ -53,7 +53,7 @@ class BookRoomController extends Controller
     public function update($id)
     {
         $room = Room::findOrFail($id);
-        $room->status="Đang trống";
+        $room->status= Checkout::CHECKOUT;
         $room->save();
         toastr()->success('Thanh toán thành công');
         return redirect()->route('rooms.index');
