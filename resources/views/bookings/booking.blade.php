@@ -104,6 +104,7 @@
                                                 <div class="col-12 col-md-6">
                                                     <h4 class="fa-hover"> Tình Trạng:
                                                         <input class="form-control" name="status" disabled value="Đang có khách">
+
                                                     </h4>
                                                 </div>
                                             </div>
