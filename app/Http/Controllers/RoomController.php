@@ -34,38 +34,29 @@ class RoomController extends Controller
 
     public function store(Request $request)
     {
-        $room = new Room();
-        $room->name = $request->name;
-        $room->type = $request->type;
-        $room->price = $request->price;
-        $room->status = $request->status;
-        $room->save();
+        $this->roomService->create($request);
         toastr()->success('Thêm mới phòng thành công!');
         return redirect()->route('rooms.index');
     }
 
     public function edit($id)
     {
-        $room = Room::findOrFail($id);
+        $room = $this->roomService->find($id);
         return view('/rooms/edit', compact('room'));
     }
 
     public function update(Request $request, $id)
     {
-        $room = Room::findOrFail($id);
-        $room->name = $request->name;
-        $room->type = $request->type;
-        $room->price = $request->price;
-        $room->status = $request->status;
-        $room->save();
+        $room = $this->roomService->find($id);
+        $this->roomService->update($room, $request);
         toastr()->success('Chỉnh sửa thành công!');
         return redirect()->route('rooms.major');
     }
 
     public function delete($id)
     {
-        $room = Room::findOrFail($id);
-        $room->delete();
+        $room = $this->roomService->find($id);
+        $this->roomService->destroy($room);
         toastr()->success('Xoá phòng thành công!');
         return redirect()->route('rooms.major');
     }
