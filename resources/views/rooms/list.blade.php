@@ -13,7 +13,8 @@
         <div class=" content mt-3">
             @foreach($rooms as $key => $room)
                 <div class="col-sm-6 col-lg-3">
-                    <div class="card text-white {{($room->status)=='Đang có khách' ? 'bg-flat-color-4' : 'bg-flat-color-1'}}">
+                    <div
+                        class="card text-white {{($room->status)=='Đang có khách' ? 'bg-flat-color-4' : 'bg-flat-color-1'}}">
                         <div class="card-body pb-0">
                             <div class="dropdown float-right">
                             </div>
@@ -26,8 +27,11 @@
                             <p class="text-light">{{$room->price}}</p>
                             <hr>
                             <div class="row">
-                                <div>
-                                    <a class="btn btn-danger" href="{{route('booking.index',$room->id)}}">Đặt Phòng</a>
+                                <div class="col-12">
+                                    <div class="col-12 btn mb-3">
+                                        <a class="btn btn-danger {{($room->status)=='Đang có khách' ? 'd-none' : 'd-inline'}}" href="{{route('booking.index',$room->id)}}">Đặt phòng</a>
+                                        <a class="btn btn-warning {{($room->status)=='Đang có khách' ? 'd-inline' : 'd-none'}}" href="">Trả phòng</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
