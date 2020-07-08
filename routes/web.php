@@ -25,7 +25,6 @@ Route::middleware('auth')->group(function () {
         Route::get('/{id}/edit', 'RoomController@edit')->name('rooms.edit');
         Route::post('/{id}/edit', 'RoomController@update')->name('rooms.update');
         Route::get('/{id}/delete', 'RoomController@delete')->name('rooms.delete');
-
     });
     Route::prefix('customers')->group(function () {
         Route::get('/', 'CustomerController@index')->name('customers.index');
@@ -36,7 +35,7 @@ Route::middleware('auth')->group(function () {
         Route::get('/{id}/destroy', 'CustomerController@destroy')->name('customers.destroy');
     });
     Route::prefix('booking')->group(function (){
-        Route::get('/', 'BookRoomController@show')->name('booking.show');
+        Route::get('/{id}/create', 'BookRoomController@index')->name('booking.index');
     });
 
     Route::prefix('bills')->group(function (){
