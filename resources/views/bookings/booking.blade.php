@@ -1,6 +1,5 @@
 @extends('layout.home')
 @section('content')
-    <meta name="_token" content="{{ csrf_token() }}">
     <section class="content-header">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href=""><i class="mdi mdi-home-outline"></i> Home</a></li>
