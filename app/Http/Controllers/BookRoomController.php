@@ -34,14 +34,10 @@ class BookRoomController extends Controller
         $bill->room_id = $room->id;
         $bill->save();
 
-        $customer1 = Customer::all();
-        $key = $customer1[count($customer1) - 1]['id'];
-        $room->customers()->attach($key);
-
         $room->status = $request->status;
         $room->price = $request->price;
         $room->save();
-
+        $room->customers()->attach($customer->id);
         return redirect()->route('rooms.index');
 
     }
