@@ -23,7 +23,7 @@
                             <h4 class="mb-0">
                                 <span class="count">{{$room->name}}--{{$room->type}}</span>
                                 <hr>
-                                <p class="text-light">{{$room->status}}</p>
+                                <h3 class="text-light">{{$room->status}}</h3>
                             </h4>
                             <hr/>
                             <p class="text-light">{{$room->price}}</p>
