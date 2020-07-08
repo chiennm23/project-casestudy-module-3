@@ -27,7 +27,7 @@
                             <hr>
                             <div class="row">
                                 <div>
-                                    <a class="btn btn-danger" href="{{route('booking.show')}}">Đặt Phòng</a>
+                                    <a class="btn btn-danger" href="{{route('booking.index',$room->id)}}">Đặt Phòng</a>
                                 </div>
                             </div>
                         </div>

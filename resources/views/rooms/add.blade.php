@@ -18,7 +18,10 @@
             </div>
             <div class="form-group">
                 <label>Loại Phòng</label>
-                <input type="text" class="form-control" name="type" placeholder="Loại Phòng">
+                <select name="type"  class="form-control">
+                    <option>Phòng Đơn</option>
+                    <option>Phòng Đôi</option>
+                </select>
             </div>
             <div class="form-group">
                 <label>Giá Phòng</label>

@@ -54,7 +54,7 @@
                                                     </div>
                                                 </div>
                                                 <button class="btn btn-primary col-3 submit-br" type="submit">
-                                                    <a href="{{route('rooms.index')}}">Xác Nhận</a>
+                                                  Xác Nhận
                                                 </button>
                                             </div>
                                         </div>
@@ -112,32 +112,41 @@
                                     <div class="col-12 col-md-6 user-borrow">
                                         <div class="row">
                                             <h4 class="fa-hover">
-                                                <i class="fa fa-home" aria-hidden="true"></i> Phòng: </h4>
+                                                <i class="fa fa-home" aria-hidden="true"></i> Phòng:
+                                                <input type="text" name="name" disabled value="{{$room->name}}">
+                                            </h4>
                                         </div>
                                         <hr>
                                         <div class="row mt-4">
                                             <div class="col-12 col-md-6">
-                                                <h4 class="fa-hover"> Loại Phòng:</h4>
+                                                <h4 class="fa-hover"> Loại Phòng:
+                                                    <input type="text" name="type" disabled value="{{$room->type}}">
+                                                </h4>
                                             </div>
                                         </div>
                                         <div class="row mt-4">
                                             <div class="col-12 col-md-6">
-                                                <h4 class="fa-hover"> Giá Phòng:</h4>
+                                                <h4 class="fa-hover"> Giá Phòng:
+                                                    <select class="form-control" name="price">
+                                                        <option>700.000/Ngày</option>
+                                                        <option>100.000/2h</option>
+                                                        <option>400.000/12h</option>
+                                                    </select>
+                                                </h4>
                                             </div>
                                         </div>
                                         <div class="row mt-4">
                                             <div class="col-12 col-md-6">
-                                                <h4 class="fa-hover"> Ngày Nhận Phòng:</h4>
+                                                <h4 class="fa-hover"> Ngày Nhận Phòng:
+                                                    <input disabled  name='day' value="{{\Carbon\Carbon::now()->toDateString()}}">
+                                                </h4>
                                             </div>
                                         </div>
                                         <div class="row mt-4">
                                             <div class="col-12 col-md-6">
-                                                <h4 class="fa-hover"> Giờ Nhận Phòng:</h4>
-                                            </div>
-                                        </div>
-                                        <div class="row mt-4">
-                                            <div class="col-12 col-md-6">
-                                                <h4 class="fa-hover"> Tên Khách Hàng:</h4>
+                                                <h4 class="fa-hover"> Giờ Nhận Phòng:
+                                                    <input disabled name="time" value="{{\Carbon\Carbon::now()->toTimeString()}}">
+                                                </h4>
                                             </div>
                                         </div>
                                     </div>
