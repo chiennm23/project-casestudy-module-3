@@ -1,6 +1,8 @@
 @extends('layout.home')
 @section('content')
     <section class="content">
+        <form method="post" action="{{route('booking.create',$room->id)}}">
+            @csrf
         <div class="row">
             <div class="col-12">
                 <div class="box">
@@ -138,7 +140,7 @@
                                         <div class="row mt-4">
                                             <div class="col-12 col-md-6">
                                                 <h4 class="fa-hover"> Ngày Nhận Phòng:
-                                                    <input disabled  name='day' value="{{\Carbon\Carbon::now()->toDateString()}}">
+                                                    <input disabled  name="day" value="{{\Carbon\Carbon::now()->toDateString()}}">
                                                 </h4>
                                             </div>
                                         </div>
@@ -157,6 +159,7 @@
                 </div>
             </div>
         </div>
+        </form>
     </section>
 @endsection
 
