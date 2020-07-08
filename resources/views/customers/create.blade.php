@@ -25,14 +25,14 @@
                     <div class="form-group ">
                         <label class="{{($errors->first('card')) ? 'text-danger' : ''}}">CMND:</label>
                         <input class="form-control {{($errors->first('card')) ? 'is-invalid' : ''}}" name="card"
-                               placeholder="Vd: 151712241" type="number" value="{{old('card')}}">
+                               placeholder="Vd: 151712241" type="" value="{{old('card')}}">
                         @if($errors->first('card'))
                             <p class="text-danger">{{ $errors->first('card') }}</p>
                         @endif
                     </div>
                     <div class="form-group ">
                         <label class="{{($errors->first('phone')) ? 'text-danger' : ''}}">Số Điên Thoại:</label>
-                        <input type="number" class="form-control {{($errors->first('phone')) ? 'is-invalid' : ''}}"
+                        <input type="" class="form-control {{($errors->first('phone')) ? 'is-invalid' : ''}}"
                                name="phone" placeholder="Vd: 0xxxxxxxxx" value="{{old('phone')}}">
                         @if($errors->first('phone'))
                             <p class="text-danger">{{ $errors->first('phone') }}</p>
