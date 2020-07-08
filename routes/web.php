@@ -38,6 +38,7 @@ Route::middleware('auth')->group(function () {
 
     Route::prefix('booking')->group(function (){
         Route::get('/{id}/create', 'BookRoomController@index')->name('booking.index');
+        Route::post('/{id}/create', 'BookRoomController@create')->name('booking.create');
     });
 
 
