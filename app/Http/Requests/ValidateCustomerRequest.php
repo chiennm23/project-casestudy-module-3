@@ -25,7 +25,7 @@ class ValidateCustomerRequest extends FormRequest
     {
         return [
             'name'=>'required|min:6|max:18',
-            'card'=>'required|min:9|max:12|unique:customers',
+            'card'=>'required|min:9|max:12|unique:customers,idCard',
             'phone'=>'required|unique:customers'
         ];
     }
