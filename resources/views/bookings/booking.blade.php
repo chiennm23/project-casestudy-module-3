@@ -144,7 +144,7 @@
                                             <hr>
                                             <div class="row mt-4">
                                                 <div class="col-12 col-md-6">
-                                                    <h4 class="fa-hover"> Loại Phòng:
+                                                    <h4 class="fa-hover"> Loại:
                                                         <input type="text" name="type" disabled value="{{$room->type}}">
                                                     </h4>
                                                 </div>
@@ -163,10 +163,7 @@
                                             <div class="row mt-4">
                                                 <div class="col-12 col-md-6">
                                                     <h4 class="fa-hover"> Tình Trạng:
-                                                        <select class="form-control" name="status">
-                                                            <option>Đang trống</option>
-                                                            <option>Đang có khách</option>
-                                                        </select>
+                                                       <input name="status" value="Đang có khách" disabled>
                                                     </h4>
                                                 </div>
                                             </div>
