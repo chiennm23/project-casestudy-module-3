@@ -4,57 +4,56 @@ namespace App\Http\Controllers;
 
 use App\Customer;
 use App\Http\Requests\ValidateCustomerRequest;
+use App\Http\Services\CustomerService;
 use App\Room;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 
 class CustomerController extends Controller
 {
+    protected $customerService;
+
+    public function __construct(CustomerService $customerService)
+    {
+        $this->customerService = $customerService;
+    }
+
     public function index()
     {
-        $customers = Customer::all();
+        $customers = $this->customerService->getAll();
         return view('customers.list', compact('customers'));
     }
 
     public function create()
     {
-        $rooms = Room::all();
-        return view('customers.create', compact('rooms'));
+        return view('customers.create');
     }
 
     public function store(ValidateCustomerRequest $request)
     {
-        $customer = new Customer();
-        $customer->name = $request->name;
-        $customer->idCard = $request->card;
-        $customer->phone = $request->phone;
-        $customer->save();
+        $this->customerService->create($request);
         toastr()->success('Thêm khách hàng thành công');
         return redirect()->route('customers.index');
     }
 
     public function edit($id)
     {
-        $customer = Customer::findOrFail($id);
-        $rooms = Room::all();
-        return view('customers.edit', compact('customer', 'rooms'));
+        $customer = $this->customerService->find($id);
+        return view('customers.edit', compact('customer'));
     }
 
     public function update(Request $request, $id)
     {
-        $customer = Customer::findOrFail($id);
-        $customer->name = $request->name;
-        $customer->idCard = $request->card;
-        $customer->phone = $request->phone;
-        $customer->save();
+        $customer = $this->customerService->find($id);
+        $this->customerService->update($request, $customer);
         toastr()->success('Chỉnh sửa khách hàng thành công');
         return redirect()->route('customers.index');
     }
 
     public function destroy($id)
     {
-        $customer = Customer::findOrFail($id);
-        $customer->delete();
+        $customer = $this->customerService->find($id);
+        $this->customerService->destroy($customer);
         toastr()->success('Xoá khách hàng thành công');
         return redirect()->route('customers.index');
     }
