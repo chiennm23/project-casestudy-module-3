@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Customer;
+use App\Http\Requests\ValidateCustomerRequest;
 use App\Room;
 use Illuminate\Http\Request;
 
@@ -20,7 +21,7 @@ class CustomerController extends Controller
         return view('customers.create', compact('rooms'));
     }
 
-    public function store(Request $request)
+    public function store(ValidateCustomerRequest $request)
     {
         $customer = new Customer();
         $customer->name = $request->name;
