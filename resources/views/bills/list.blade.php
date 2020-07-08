@@ -9,13 +9,6 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-8">
-                <div class="page-header float-right">
-                    <div class="page-title">
-                        <a class="btn btn-primary mt-2" href="{{route('bills.create')}}">Thêm Mới</a>
-                    </div>
-                </div>
-            </div>
         </div>
         <div class="content mt-3">
             <div class="col-12">

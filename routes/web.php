@@ -40,8 +40,6 @@ Route::middleware('auth')->group(function () {
 
     Route::prefix('bills')->group(function (){
         Route::get('/', 'BillController@index')->name('bills.index');
-        Route::get('/create', 'BillController@create')->name('bills.create');
-        Route::post('/create', 'BillController@store')->name('bills.store');
     });
 });
 
