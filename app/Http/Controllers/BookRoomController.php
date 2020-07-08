@@ -47,7 +47,8 @@ class BookRoomController extends Controller
     public function edit($id)
     {
         $room = Room::findOrFail($id);
-        return view('bookings.exitRoom', compact('room'));
+        $bills= Bill::all();
+        return view('bookings.exitRoom', compact('room','bills'));
     }
 
     public function update($id)
@@ -55,6 +56,7 @@ class BookRoomController extends Controller
         $room = Room::findOrFail($id);
         $room->status= Checkout::CHECKOUT;
         $room->save();
+
         toastr()->success('Thanh toán thành công');
         return redirect()->route('rooms.index');
 

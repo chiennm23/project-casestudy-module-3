@@ -14,6 +14,7 @@
                                 <thead>
                                 <tr>
                                     <th>Phòng</th>
+                                    <th>Giá tiền</th>
                                     <th>Thời gian vào</th>
                                     <th>Thời gian về</th>
                                 </tr>
