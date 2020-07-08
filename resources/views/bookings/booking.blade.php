@@ -1,24 +1,11 @@
 @extends('layout.home')
 @section('content')
-    <section class="content-header">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href=""><i class="mdi mdi-home-outline"></i> Home</a></li>
-        </ol>
-    </section>
     <section class="content">
         <div class="row">
             <div class="col-12">
                 <div class="box">
-                    <div class="box-header with-border bg-light">
-                        <div class="box-controls pull-right">
-                        </div>
-                    </div>
                     <div class="box-body">
                         <div class="row">
-                            <div class="col-12 col-md-12">
-                                <div class="list-action">
-                                </div>
-                            </div>
                             <div class="col-12 col-md-12">
                                 <div class="row">
                                     <div class="col-12 col-md-6 user-borrow">
@@ -30,10 +17,11 @@
                                             <div class="col-12 col-md-6">
                                                 <button type="button" class="btn btn-default btn-sm" data-toggle="modal"
                                                         data-target="#modal-customer">
-                                                    Thêm Khách Hàng
+                                                    Tìm Khách Hàng
                                                 </button>
                                             </div>
                                         </div>
+                                        <hr>
                                         <div class="row">
                                             <div class="col-12 col-md-12">
                                                 <div class="row" style="padding-top: 20px">
@@ -65,8 +53,8 @@
                                                                data-validation-required-message="This field is required">
                                                     </div>
                                                 </div>
-                                                <button class="btn btn-primary col-3 submit-br" type="submit">Cho
-                                                   thuê
+                                                <button class="btn btn-primary col-3 submit-br" type="submit">
+                                                    <a href="{{route('rooms.index')}}">Xác Nhận</a>
                                                 </button>
                                             </div>
                                         </div>
@@ -118,6 +106,38 @@
                                                         </button>
                                                     </div>
                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 user-borrow">
+                                        <div class="row">
+                                            <h4 class="fa-hover">
+                                                <i class="fa fa-home" aria-hidden="true"></i> Phòng: </h4>
+                                        </div>
+                                        <hr>
+                                        <div class="row mt-4">
+                                            <div class="col-12 col-md-6">
+                                                <h4 class="fa-hover"> Loại Phòng:</h4>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-4">
+                                            <div class="col-12 col-md-6">
+                                                <h4 class="fa-hover"> Giá Phòng:</h4>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-4">
+                                            <div class="col-12 col-md-6">
+                                                <h4 class="fa-hover"> Ngày Nhận Phòng:</h4>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-4">
+                                            <div class="col-12 col-md-6">
+                                                <h4 class="fa-hover"> Giờ Nhận Phòng:</h4>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-4">
+                                            <div class="col-12 col-md-6">
+                                                <h4 class="fa-hover"> Tên Khách Hàng:</h4>
                                             </div>
                                         </div>
                                     </div>
