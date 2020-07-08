@@ -6,6 +6,7 @@ use App\Customer;
 use App\Http\Requests\ValidateCustomerRequest;
 use App\Room;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
 
 class CustomerController extends Controller
 {
