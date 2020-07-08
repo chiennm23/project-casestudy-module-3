@@ -40,6 +40,8 @@ Route::middleware('auth')->group(function () {
     Route::prefix('booking')->group(function () {
         Route::get('/{id}/create', 'BookRoomController@index')->name('booking.index');
         Route::post('/{id}/create', 'BookRoomController@create')->name('booking.create');
+        Route::get('/{id}/edit', 'BookRoomController@edit')->name('booking.edit');
+        Route::get('/{id}/update', 'BookRoomController@update')->name('booking.update');
     });
 
     Route::prefix('bills')->group(function () {
