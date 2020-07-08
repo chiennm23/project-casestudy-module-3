@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Bill;
 use App\Customer;
+use App\Http\Requests\ValidateCustomerRequest;
 use App\Room;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
@@ -17,7 +18,7 @@ class BookRoomController extends Controller
     }
 
 
-    public function create(Request $request, $id)
+    public function create(ValidateCustomerRequest $request, $id)
     {
 
         $room = Room::findOrFail($id);
@@ -29,7 +30,7 @@ class BookRoomController extends Controller
 
         $bill = new Bill();
         $bill->date = Carbon::now()->toDateString();
-        $bill->price = $room->price;
+        $bill->price = $request->price;
         $bill->room_id = $room->id;
         $bill->save();
 
@@ -37,7 +38,8 @@ class BookRoomController extends Controller
         $key = $customer1[count($customer1) - 1]['id'];
         $room->customers()->attach($key);
 
-        $room->status = 'có khách';
+        $room->status = $request->status;
+        $room->price = $request->price;
         $room->save();
 
         return redirect()->route('rooms.index');

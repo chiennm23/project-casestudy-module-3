@@ -13,7 +13,7 @@
         <div class=" content mt-3">
             @foreach($rooms as $key => $room)
                 <div class="col-sm-6 col-lg-3">
-                    <div class="card text-white bg-flat-color-1">
+                    <div class="card text-white {{($room->status)=='Đang có khách' ? 'bg-flat-color-4' : 'bg-flat-color-1'}}">
                         <div class="card-body pb-0">
                             <div class="dropdown float-right">
                             </div>
