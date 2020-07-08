@@ -39,18 +39,9 @@
             <ul class="nav navbar-nav">
                 <h3 class="menu-title"><a href="{{route('rooms.index')}}">CodeGym Hotel</a></h3>
                 <li class="menu-item-has-children dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-laptop"></i>Components</a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Bills</a>
                     <ul class="sub-menu children dropdown-menu">
-                        <li><i class="fa fa-puzzle-piece"></i><a href="">Buttons</a></li>
-                        <li><i class="fa fa-id-badge"></i><a href="">Badges</a></li>
-                        <li><i class="fa fa-bars"></i><a href="">Tabs</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item-has-children dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Tables</a>
-                    <ul class="sub-menu children dropdown-menu">
-                        <li><i class="fa fa-table"></i><a href="">Basic Table</a></li>
-                        <li><i class="fa fa-table"></i><a href="">Data Table</a></li>
+                        <li><i class="fa fa-table"></i><a href="{{route('bills.index')}}">Danh sách các hóa đơn</a></li>
                     </ul>
                 </li>
                 <li class="menu-item-has-children dropdown">

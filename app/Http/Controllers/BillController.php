@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Bill;
+
 use Illuminate\Http\Request;
 
 class BillController extends Controller
@@ -13,13 +14,19 @@ class BillController extends Controller
         return view('/bills/list', compact('bills'));
     }
 
-    public function creat()
+    public function create()
     {
-        return view('/bills/create');
+        return view('/bills/add');
     }
 
-    public function add()
+    public function store(Request $request)
     {
-
+        $bill = new Bill();
+        $bill->date = $request->date;
+        $bill->type = $request->price;
+        $bill->room_id = $request->room_id;
+        $bill->save();
+        toastr()->success('Thêm mới bill thành công!');
+        return redirect()->route('bills.index');
     }
 }
