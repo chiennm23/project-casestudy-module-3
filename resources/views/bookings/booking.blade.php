@@ -87,6 +87,7 @@
                                             <div class="row mt-4">
                                                 <div class="col-12 col-md-6">
                                                     <h3 class="fa-hover"> Loại Phòng:{{$room->type}}</h3>
+
                                                 </div>
                                             </div>
                                             <div class="row mt-4">
@@ -104,6 +105,7 @@
                                                 <div class="col-12 col-md-6">
                                                     <h4 class="fa-hover"> Tình Trạng:
                                                         <input class="form-control" name="status" disabled value="Đang có khách">
+
                                                     </h4>
                                                 </div>
                                             </div>
