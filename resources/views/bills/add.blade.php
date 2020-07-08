@@ -10,12 +10,8 @@
         </div>
     </div>
     <div class="col-12 ml-10">
-        <form method="post" action="#">
+        <form method="post" action="{{route('bills.store')}}}">
             @csrf
-            <div class="form-group">
-                <label>Tổng tiền</label>
-                <input type="text" class="form-control" name="price" placeholder="Tổng tiền">
-            </div>
             <div class="form-group">
                 <label>Phòng</label>
                 <input type="text" class="form-control" name="room_id" placeholder="Phòng">
@@ -25,8 +21,8 @@
                 <input type="text" class="form-control" name="date" placeholder="Date">
             </div>
             <div class="form-group">
-                <label>Giờ vào</label>
-                <input type="text" class="form-control" name="created_at" placeholder="Giờ vào">
+                <label>Tổng tiền</label>
+                <input type="text" class="form-control" name="price" placeholder="Tổng tiền">
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>

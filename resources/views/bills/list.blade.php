@@ -35,13 +35,11 @@
                         </thead>
                         <tbody>
                         @foreach($bills as $key => $bill)
-                            <tr>
-                                <td scope="row">{{++$key}}</td>
-                                <td>{{$bill->room_id}}</td>
-                                <td>{{$bill->created_at}}</td>
-                                <td></td>
-                                <td>{{$bill->price}}</td>
-                            </tr>
+                            <td>{{++$key}}</td>
+                            <td>{{$bill->room_id}}</td>
+                            <td>{{$bill->created_at}}</td>
+                            <td></td>
+                            <td>{{$bill->price}}</td>
                         @endforeach
                         </tbody>
                     </table>
