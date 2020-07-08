@@ -43,4 +43,20 @@ class BookRoomController extends Controller
         return redirect()->route('rooms.index');
 
     }
+
+    public function edit($id)
+    {
+        $room = Room::findOrFail($id);
+        return view('bookings.exitRoom', compact('room'));
+    }
+
+    public function update($id)
+    {
+        $room = Room::findOrFail($id);
+        $room->status="Đang trống";
+        $room->save();
+        toastr()->success('Thanh toán thành công');
+        return redirect()->route('rooms.index');
+
+    }
 }

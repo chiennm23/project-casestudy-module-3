@@ -32,7 +32,7 @@
                                 <div class="col-12">
                                     <div class="col-12 btn mb-3">
                                         <a class="btn btn-danger {{($room->status)==='Đang có khách' ? 'd-none' : 'd-inline'}}" href="{{route('booking.index',$room->id)}}">Đặt phòng</a>
-                                        <a class="btn btn-warning {{($room->status)==='Đang có khách' ? 'd-inline' : 'd-none'}}" href="">Trả phòng</a>
+                                        <a class="btn btn-warning {{($room->status)==='Đang có khách' ? 'd-inline' : 'd-none'}}" href="{{route('booking.edit',$room->id)}}">Trả phòng</a>
                                     </div>
                                 </div>
                             </div>
