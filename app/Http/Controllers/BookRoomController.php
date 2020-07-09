@@ -5,61 +5,68 @@ namespace App\Http\Controllers;
 use App\Bill;
 use App\Customer;
 use App\Http\Requests\ValidateCustomerRequest;
+use App\Http\Services\BillService;
 use App\Http\Services\BookRoomService;
+use App\Http\Services\CustomerService;
 use App\Http\Services\RoomService;
 use App\Room;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Mockery\Exception;
 
 class BookRoomController extends Controller
 {
+
+    protected $roomService;
+    protected $customerService;
+    protected $bookRoomService;
+    protected $billService;
+
+    public function __construct(RoomService $roomService,
+                                CustomerService $customerService,
+                                BookRoomService $bookRoomService,
+                                BillService $billService)
+    {
+        $this->roomService = $roomService;
+        $this->customerService  = $customerService;
+        $this->bookRoomService = $bookRoomService;
+        $this->billService = $billService;
+    }
+
     public function index($id)
     {
-        $room =Room::findOrFail($id);
+        $room = $this->roomService->find($id);
         return view('bookings.booking', compact('room'));
     }
 
     public function create(ValidateCustomerRequest $request, $id)
     {
-        $room =Room::findOrFail($id);
-        $customer = Customer::where('idCard',$request->card)->first();
-        if (!$customer) {
-            $customer = new Customer();
-            $customer->name = $request->name;
-            $customer->idCard = $request->card;
-            $customer->phone = $request->phone;
-            $customer->save();
+        $room = $this->roomService->find($id);
+        $customer = $this->customerService->findByClosure('idCard',$request->card);
+        DB::beginTransaction();
+        try {
+            $this->bookRoomService->booking($customer, $request, $room);
+            DB::commit();
+            toastr()->success('Đặt phòng thành công');
+            return redirect()->route('rooms.index');
+        } catch (Exception $exception){
+            DB::rollBack();
         }
-
-        $bill = new Bill();
-        $bill->date = $request->day;
-        $bill->timeStart = $request->time;
-        $bill->price = $request->price;
-        $bill->room_id = $room->id;
-        $bill->save();
-
-        $room->status = $request->status;
-        $room->price = $request->price;
-        $room->save();
-
-        $room->customers()->attach($customer->id);
-        toastr()->success('Đặt phòng thành công');
-        return redirect()->route('rooms.index');
     }
 
     public function edit($id)
     {
-        $room = Room::findOrFail($id);
-        $bills= Bill::all();
+        $room = $this->roomService->find($id);
+        $bills= $this->billService->getAll();
         return view('bookings.exitRoom', compact('room','bills'));
     }
 
     public function update($id)
     {
-        $room = Room::findOrFail($id);
+        $room = $this->roomService->find($id);
         $room->status= Checkout::CHECKOUT;
-        $room->timeEnd= Carbon::now()->toTimeString();
-        $room->save();
+        $this->roomService->save($room);
         toastr()->success('Thanh toán thành công');
         return redirect()->route('rooms.index');
     }

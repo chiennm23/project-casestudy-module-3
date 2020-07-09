@@ -25,7 +25,6 @@ class ValidateCustomerRequest extends FormRequest
     public function rules()
     {
         $cardCustomer = $this->card;
-
         $customer = Customer::where('idCard', $cardCustomer)->first();
         $ruleCustomer = ["", ""];
         if (!$cardCustomer) {

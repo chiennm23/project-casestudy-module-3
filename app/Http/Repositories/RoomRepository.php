@@ -35,4 +35,9 @@ class RoomRepository
     {
         $room->delete();
     }
+
+    public function attachCustomer($room, $customer)
+    {
+        $room->customers()->attach($customer->id);
+    }
 }

@@ -48,4 +48,9 @@ class CustomerService
         $this->customerRepo->delete($id);
     }
 
+    public function findByClosure($attr, $value)
+    {
+        return $this->customerRepo->findByClosure($attr, $value);
+    }
+
 }

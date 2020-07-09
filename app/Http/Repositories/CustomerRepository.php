@@ -35,4 +35,9 @@ class CustomerRepository
         $customer->delete();
     }
 
+    public function findByClosure($attr, $value)
+    {
+        return $this->customerModel->where($attr,$value)->first();
+    }
+
 }

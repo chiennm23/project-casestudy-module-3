@@ -20,4 +20,9 @@ class BillRepository
         return $this->billModel->all();
     }
 
+    public function save($bill)
+    {
+        $bill->save();
+    }
+
 }
