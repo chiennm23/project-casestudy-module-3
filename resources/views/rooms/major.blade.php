@@ -42,11 +42,16 @@
                                 <td>{{$room->name}}</td>
                                 <td>{{$room->type}}</td>
                                 <td>{{$room->status}}</td>
-                                <td>
-                                    <a href="{{route('rooms.edit', $room->id)}}" class="btn btn-warning">Edit</a>
-                                    <a href="{{route('rooms.delete', $room->id)}}" class="btn btn-danger"
-                                       onclick="return confirm('Bạn chắc chắn muốn xóa?')">Delete</a>
-                                </td>
+
+                                    <td>
+                                        <a href="{{route('rooms.edit', $room->id)}}" class="btn btn-warning">Edit</a>
+                                        @can('admin')
+                                        <a href="{{route('rooms.delete', $room->id)}}" class="btn btn-danger"
+                                           onclick="return confirm('Bạn chắc chắn muốn xóa?')">Delete</a>
+                                        @endcan
+
+                                    </td>
+
                             </tr>
                         @endforeach
                         </tbody>

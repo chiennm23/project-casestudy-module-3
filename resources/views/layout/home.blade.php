@@ -56,8 +56,10 @@
                     <ul class="sub-menu children dropdown-menu">
                         <li><i class="menu-icon fa fa-th"></i><a href="{{route('customers.index')}}">Danh sách khách
                                 hàng</a></li>
-                        <li><i class="menu-icon fa fa-th"></i><a href="{{route('customers.create')}}">Thêm mới khách
-                                hàng</a></li>
+                        @can('admin')
+                            <li><i class="menu-icon fa fa-th"></i><a href="{{route('customers.create')}}">Thêm mới khách
+                                    hàng</a></li>
+                        @endcan
                     </ul>
                 </li>
                 <li class="menu-item-has-children dropdown">

@@ -27,12 +27,13 @@
                             <td>{{ $customer->name }}</td>
                             <td>{{ $customer->idCard }}</td>
                             <td>{{ $customer->phone }}</td>
-                            <td>
-                                <a href="{{route('customers.destroy',$customer->id)}}" class="btn btn-danger"
-                                   onclick="return confirm('Bạn chắc chắn muốn xóa?')">Delete</a>
-                                <a href="{{route('customers.edit',$customer->id)}}" class="btn btn-primary">Edit</a>
-                            </td>
-
+                            @can('admin')
+                                <td>
+                                    <a href="{{route('customers.destroy',$customer->id)}}" class="btn btn-danger"
+                                       onclick="return confirm('Bạn chắc chắn muốn xóa?')">Delete</a>
+                                    <a href="{{route('customers.edit',$customer->id)}}" class="btn btn-primary">Edit</a>
+                                </td>
+                            @endcan
                         </tr>
                     @endforeach
                 @endif
