@@ -23,7 +23,6 @@
                             <th scope="col">Phòng</th>
                             <th scope="col">Ngày</th>
                             <th scope="col">Giờ vào</th>
-                            <th scope="col">Giờ ra</th>
                             <th scope="col">Tổng tiền</th>
                         </tr>
                         </thead>
@@ -34,7 +33,6 @@
                                 <td>{{$bill->room->name}}</td>
                                 <td>{{$bill->date}}</td>
                                 <td>{{$bill->TimeStart}}</td>
-                                <td>{{$bill->timeEnd}}</td>
                                 <td>{{$bill->price}}</td>
                             </tr>
                         @endforeach

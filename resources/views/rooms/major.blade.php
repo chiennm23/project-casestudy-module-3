@@ -39,9 +39,9 @@
                         @foreach($rooms as $key => $room)
                             <tr>
                                 <td scope="row">{{++$key}}</td>
-                                <td>{{$room->name}}</td>
-                                <td>{{$room->type}}</td>
-                                <td>{{$room->status}}</td>
+                                <td scope="row">{{$room->name}}</td>
+                                <td scope="row">{{$room->type}}</td>
+                                <td scope="row">{{$room->status}}</td>
 
                                     <td>
                                         <a href="{{route('rooms.edit', $room->id)}}" class="btn btn-warning {{($room->status)==='Đang có khách' ? 'd-none' : 'd-inline'}}">Edit</a>

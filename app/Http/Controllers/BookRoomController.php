@@ -58,6 +58,7 @@ class BookRoomController extends Controller
     {
         $room = Room::findOrFail($id);
         $room->status= Checkout::CHECKOUT;
+        $room->timeEnd= Carbon::now()->toTimeString();
         $room->save();
         toastr()->success('Thanh toán thành công');
         return redirect()->route('rooms.index');
