@@ -33,8 +33,8 @@ class ValidateCustomerRequest extends FormRequest
         }
         return [
             'name' => 'required|max:18',
-            'card' => 'required|min:9|max:10|' . $ruleCustomer[0],
-            'phone' => 'required|' . $ruleCustomer[1]
+            'card' => 'required|min:9|max:12|' . $ruleCustomer[0],
+            'phone' => 'required|min:10|max:12|' . $ruleCustomer[1]
         ];
     }
 
@@ -44,10 +44,12 @@ class ValidateCustomerRequest extends FormRequest
             'name.required' => 'Tên không được để trống',
             'name.max' => 'số kí tự nằm trong khoảng 6-18',
             'card.required' => 'CMND không được để trống',
-            'card.min' => 'Số kí tự nằm trong khoảng 9-10',
-            'card.max' => 'Số kí tự nằm trong khoảng 9-10',
+            'card.min' => 'Số kí tự nằm trong khoảng 9-12',
+            'card.max' => 'Số kí tự nằm trong khoảng 9-12',
             'card.unique' => 'CMND đã tồn tại',
             'phone.required' => 'số điện thoại không được để trống',
+            'phone.min' => 'Số nằm trong khoảng 10-12',
+            'phone.max' => 'Số nằm trong khoảng 10-12',
             'phone.unique' => 'Số điện thoại đã tồn tại'
         ];
     }
