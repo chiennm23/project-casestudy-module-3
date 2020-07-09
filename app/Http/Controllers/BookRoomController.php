@@ -20,11 +20,14 @@ class BookRoomController extends Controller
     public function create(ValidateCustomerRequest $request, $id)
     {
         $room = Room::findOrFail($id);
-        $customer = new Customer();
-        $customer->name = $request->name;
-        $customer->idCard = $request->card;
-        $customer->phone = $request->phone;
-        $customer->save();
+        $customer = Customer::where('idCard',$request->card)->first();
+        if (!$customer) {
+            $customer = new Customer();
+            $customer->name = $request->name;
+            $customer->idCard = $request->card;
+            $customer->phone = $request->phone;
+            $customer->save();
+        }
 
         $bill = new Bill();
         $bill->date = $request->day;
