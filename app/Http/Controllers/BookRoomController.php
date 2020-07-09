@@ -20,7 +20,6 @@ class BookRoomController extends Controller
 
     public function create(ValidateCustomerRequest $request, $id)
     {
-
         $room = Room::findOrFail($id);
         $customer = new Customer();
         $customer->name = $request->name;
@@ -41,7 +40,6 @@ class BookRoomController extends Controller
         $room->customers()->attach($customer->id);
         toastr()->success('Đặt phòng thành công');
         return redirect()->route('rooms.index');
-
     }
 
     public function edit($id)

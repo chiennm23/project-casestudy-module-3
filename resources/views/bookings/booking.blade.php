@@ -86,8 +86,7 @@
                                             <hr>
                                             <div class="row mt-4">
                                                 <div class="col-12 col-md-6">
-                                                    <h3 class="fa-hover"> Loại Phòng:{{$room->type}}</h3>
-
+                                                    <h3 class="fa-hover"> Loại: {{$room->type}}</h3>
                                                 </div>
                                             </div>
                                             <div class="row mt-4">
