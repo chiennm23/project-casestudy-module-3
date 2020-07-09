@@ -32,6 +32,11 @@ class RoomService
         $this->roomRepo->save($room);
     }
 
+    public function save($romm)
+    {
+        $this->roomRepo->save($romm);
+    }
+
     public function find($id)
     {
         return $this->roomRepo->findById($id);
