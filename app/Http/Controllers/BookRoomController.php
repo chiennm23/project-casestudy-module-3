@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Bill;
 use App\Customer;
 use App\Http\Requests\ValidateCustomerRequest;
+use App\Http\Services\BookRoomService;
+use App\Http\Services\RoomService;
 use App\Room;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
@@ -13,13 +15,13 @@ class BookRoomController extends Controller
 {
     public function index($id)
     {
-        $room = Room::findOrFail($id);
+        $room =Room::findOrFail($id);
         return view('bookings.booking', compact('room'));
     }
 
     public function create(ValidateCustomerRequest $request, $id)
     {
-        $room = Room::findOrFail($id);
+        $room =Room::findOrFail($id);
         $customer = Customer::where('idCard',$request->card)->first();
         if (!$customer) {
             $customer = new Customer();
