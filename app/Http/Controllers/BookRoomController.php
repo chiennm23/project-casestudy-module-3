@@ -28,7 +28,8 @@ class BookRoomController extends Controller
         $customer->save();
 
         $bill = new Bill();
-        $bill->date = Carbon::now()->toDateString();
+        $bill->date = $request->day;
+        $bill->timeStart = $request->time;
         $bill->price = $request->price;
         $bill->room_id = $room->id;
         $bill->save();

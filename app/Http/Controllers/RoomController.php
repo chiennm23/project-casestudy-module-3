@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ValidateRoomRequest;
 use App\Http\Services\RoomService;
 use App\Room;
 use Illuminate\Http\Request;
@@ -32,7 +33,7 @@ class RoomController extends Controller
         return view('/rooms/add');
     }
 
-    public function store(Request $request)
+    public function store(ValidateRoomRequest $request)
     {
         $this->roomService->create($request);
         toastr()->success('Thêm mới phòng thành công!');

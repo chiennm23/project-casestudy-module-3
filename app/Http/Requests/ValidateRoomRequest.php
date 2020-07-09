@@ -24,7 +24,14 @@ class ValidateRoomRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'name'=>'required',
+        ];
+    }
+
+    public function messages()
+    {
+        return [
+            "name.required"=>'Tên không được để trống'
         ];
     }
 }
