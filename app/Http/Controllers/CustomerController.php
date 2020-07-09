@@ -67,6 +67,7 @@ class CustomerController extends Controller
             abort(403,'Bạn không có quyền này');
         }
         $customer = $this->customerService->find($id);
+        $customer->rooms()->detach();
         $this->customerService->destroy($customer);
         toastr()->success('Xoá khách hàng thành công');
         return redirect()->route('customers.index');
