@@ -7,7 +7,6 @@
                     <div class="box-header with-border bg-light">
                         <h4 class="box-title">Trả phòng</h4>
                     </div>
-                    <!-- /.box-header -->
                     <div class="box-body pt-5">
                         <div class="table-responsive">
                             <table id="example1" class="table table-bordered table-striped">
