@@ -36,6 +36,7 @@ Route::middleware('auth')->group(function () {
         Route::post('/{id}/edit', 'CustomerController@update')->name('customers.update');
         Route::get('/{id}/destroy', 'CustomerController@destroy')->name('customers.destroy');
         Route::get('/search', 'CustomerController@search')->name('customers.search');
+        Route::get('/{id}/detail', 'CustomerController@getCustomer')->name('customers.showCustomer');
     });
 
     Route::prefix('booking')->group(function () {

@@ -34,7 +34,7 @@
                                 <td>{{$bill->room->name}}</td>
                                 <td>{{$bill->date}}</td>
                                 <td>{{$bill->TimeStart}}</td>
-                                <td></td>
+                                <td>{{$bill->timeEnd}}</td>
                                 <td>{{$bill->price}}</td>
                             </tr>
                         @endforeach

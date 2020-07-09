@@ -60,7 +60,12 @@ class CustomerController extends Controller
 
     public function search(Request $request)
     {
-        $cards = Customer::where('idCard','LIKE', '%' . $request->card . '%')->get();
+        $cards = Customer::where('idCard', 'LIKE', '%' . $request->card . '%')->get();
         return response()->json($cards);
+    }
+
+    public function getCustomer($id)
+    {
+       return $this->customerService->find($id);
     }
 }

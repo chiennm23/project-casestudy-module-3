@@ -15,14 +15,15 @@
                                 <tr>
                                     <th>Phòng</th>
                                     <th>Giá tiền</th>
-                                    <th>Thời gian vào</th>
                                     <th>Thời gian về</th>
+                                    <th></th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td>{{$room->name}}</td>
-                                        <td></td>
+                                        <td>{{$room->price}}</td>
+                                        <td>{{\Carbon\Carbon::now()->toTimeString()}}</td>
                                         <td><a href="{{route('booking.update',$room->id)}}" class="btn btn-success">Thanh toan</a></td>
                                     </tr>
                                 </tbody>
