@@ -41,15 +41,26 @@
                                 <td scope="row">{{++$key}}</td>
                                 <td scope="row">{{$room->name}}</td>
                                 <td scope="row">{{$room->type}}</td>
-                                <td scope="row">{{$room->status}}</td>
+                                <td scope="row" class="@if($room->status=='Đang có khách')
+                                    text-danger
+                                    @elseif($room->status=='Đang sửa chữa')
+                                    text-warning
+                                    @elseif($room->status=='Đang vệ sinh')
+                                    text-success
+                                    @else
+                                    text-primary
+                                    @endif">
+                                    {{$room->status}}</td>
 
-                                    <td>
-                                        <a href="{{route('rooms.edit', $room->id)}}" class="btn btn-warning {{($room->status)==='Đang có khách' ? 'd-none' : 'd-inline'}}">Edit</a>
-                                        @can('admin')
-                                        <a href="{{route('rooms.delete', $room->id)}}" class="btn btn-danger {{($room->status)==='Đang có khách' ? 'd-none' : 'd-inline'}}"
+                                <td>
+                                    <a href="{{route('rooms.edit', $room->id)}}"
+                                       class="btn btn-warning {{($room->status)==='Đang có khách' ? 'd-none' : 'd-inline'}}">Edit</a>
+                                    @can('admin')
+                                        <a href="{{route('rooms.delete', $room->id)}}"
+                                           class="btn btn-danger {{($room->status)==='Đang có khách' ? 'd-none' : 'd-inline'}}"
                                            onclick="return confirm('Bạn chắc chắn muốn xóa?')">Delete</a>
-                                        @endcan
-                                    </td>
+                                    @endcan
+                                </td>
                             </tr>
                         @endforeach
                         </tbody>
