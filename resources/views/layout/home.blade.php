@@ -27,6 +27,7 @@
     <title>{{asset('Toastr.js')}}</title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="{{asset('js/my.js')}}"></script>
+    <script src="{{asset('js/locked.js')}}"></script>
     @toastr_css
 </head>
 <body>

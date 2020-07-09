@@ -44,7 +44,7 @@
                                         <a class="btn btn-warning {{($room->status)==='Đang có khách' ? 'd-inline' : 'd-none'}}"
                                            href="{{route('booking.edit',$room->id)}}">Trả phòng</a>
                                         <a class="btn btn-secondary {{($room->status)==='Đang vệ sinh' ? 'd-inline' : 'd-none'}}
-                                        {{($room->status)==='Đang sửa chữa' ? 'd-inline' : 'd-none'}}">Tạm khoá</a>
+                                        {{($room->status)==='Đang sửa chữa' ? 'd-inline' : 'd-none'}}" id="locked">Tạm khoá</a>
                                     </div>
                                 </div>
                             </div>
