@@ -42,7 +42,7 @@ class BookRoomService
         }
         $bill = new Bill();
         $bill->date = $request->day;
-        $bill->timeStart = $request->time;
+        $bill->TimeStart = $request->time;
         $bill->price = $request->price;
         $bill->room_id = $room->id;
         $this->billRepo->save($bill);
