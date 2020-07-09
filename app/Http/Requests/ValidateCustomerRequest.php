@@ -48,8 +48,8 @@ class ValidateCustomerRequest extends FormRequest
             'card.max' => 'Số kí tự nằm trong khoảng 9-12',
             'card.unique' => 'CMND đã tồn tại',
             'phone.required' => 'số điện thoại không được để trống',
-            'phone.min' => 'Số nằm trong khoảng 10-12',
-            'phone.max' => 'Số nằm trong khoảng 10-12',
+            'phone.min' => 'Số nằm trong khoảng 10-12 hoăc thêm số 0 vào đầu',
+            'phone.max' =>  'Số nằm trong khoảng 10-12 hoăc thêm số 0 vào đầu',
             'phone.unique' => 'Số điện thoại đã tồn tại'
         ];
     }
