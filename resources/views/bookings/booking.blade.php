@@ -3,12 +3,6 @@
     <section class="content">
         <form method="post" action="{{route('booking.create',$room->id)}}">
             @csrf
-            @if($errors->all())
-                <div class="alert alert-danger" role="alert">
-                    Có vấn đề khi tạo tài khoản người dùng.
-                </div>
-
-            @endif
             <div class="row">
                 <div class="col-12">
                     <div class="box">
@@ -21,6 +15,11 @@
                                                 <div class="col-12 col-md-6">
                                                     <h4 class="fa-hover mt-3">
                                                         <i class="fa fa-user-o" aria-hidden="true"></i> Khách Hàng</h4>
+                                                    @if($errors->all())
+                                                        <div class="alert alert-danger" role="alert">
+                                                            Có vấn đề khi tạo tài khoản người dùng.
+                                                        </div>
+                                                    @endif
                                                 </div>
                                             </div>
                                             <hr>
@@ -34,7 +33,7 @@
                                                                     Tên Khách Hàng <span class="text-danger">*</span>
                                                                 </h5>
                                                                 <div class="controls">
-                                                                    <input type="text" id="name-customer" name="name"
+                                                                    <input type="text"  name="name"
                                                                            class="form-control {{($errors->first('name')) ? 'is-invalid' : ''}}"
                                                                            value="{{old('name')}}">
                                                                     @if($errors->first('name'))
@@ -49,12 +48,13 @@
                                                                 <h5 class="{{($errors->first('card')) ? 'text-danger' : ''}}">
                                                                     CMND<span class="text-danger">*</span></h5>
                                                                 <div class="controls">
-                                                                    <input type="text" id="code-customer" name="card"
+                                                                    <input id="search-card" type="text"  name="card"
                                                                            class="form-control {{($errors->first('card')) ? 'is-invalid' : ''}}"
                                                                            value="{{old('card')}}">
                                                                     @if($errors->first('card'))
                                                                         <p class="text-danger">{{ $errors->first('card') }}</p>
                                                                     @endif
+                                                                    <ul id="ul-card"></ul>
                                                                 </div>
 
                                                             </div>
@@ -62,7 +62,7 @@
                                                         <div class="col-12 col-md-6 mb-3">
                                                             <h5 class="{{($errors->first('phone')) ? 'text-danger' : ''}}">
                                                                 Số Điện Thoại<span class="text-danger">*</span></h5>
-                                                            <input type="text" id="class-customer" name="phone"
+                                                            <input type="text"  name="phone"
                                                                    class="form-control {{($errors->first('phone')) ? 'is-invalid' : ''}}"
                                                                    value="{{old('phone')}}">
                                                             @if($errors->first('phone'))
@@ -111,7 +111,7 @@
                                             <div class="row mt-4">
                                                 <div class="col-12 col-md-6">
                                                     <h4 class="fa-hover"> Ngày Nhận Phòng:
-                                                        <input disabled name="day"
+                                                        <input readonly name="day"
                                                                value="{{\Carbon\Carbon::now()->toDateString()}}">
                                                     </h4>
                                                 </div>
@@ -119,7 +119,7 @@
                                             <div class="row mt-4">
                                                 <div class="col-12 col-md-6">
                                                     <h4 class="fa-hover"> Giờ Nhận Phòng:
-                                                        <input disabled name="time"
+                                                        <input readonly name="time"
                                                                value="{{\Carbon\Carbon::now()->toTimeString()}}">
                                                     </h4>
                                                 </div>

@@ -1,7 +1,10 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang="en">
 <head>
@@ -22,6 +25,7 @@
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
     <title>{{asset('Toastr.js')}}</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="{{asset('js/my.js')}}"></script>
     @toastr_css
 </head>
@@ -29,7 +33,8 @@
 <aside id="left-panel" class="left-panel">
     <nav class="navbar navbar-expand-sm navbar-default">
         <div class="navbar-header">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu"
+                    aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa fa-bars"></i>
             </button>
             <a class="navbar-brand" href="./"><img src="{{asset('images/logo.png')}}" alt="Logo"></a>
@@ -39,16 +44,20 @@
             <ul class="nav navbar-nav">
                 <h3 class="menu-title"><a href="{{route('rooms.index')}}">CodeGym Hotel</a></h3>
                 <li class="menu-item-has-children dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Bills</a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Bills</a>
                     <ul class="sub-menu children dropdown-menu">
                         <li><i class="fa fa-table"></i><a href="{{route('bills.index')}}">Danh sách các hóa đơn</a></li>
                     </ul>
                 </li>
                 <li class="menu-item-has-children dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Customers</a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Customers</a>
                     <ul class="sub-menu children dropdown-menu">
-                        <li><i class="menu-icon fa fa-th"></i><a href="{{route('customers.index')}}">Danh sách khách hàng</a></li>
-                        <li><i class="menu-icon fa fa-th"></i><a href="{{route('customers.create')}}">Thêm mới khách hàng</a></li>
+                        <li><i class="menu-icon fa fa-th"></i><a href="{{route('customers.index')}}">Danh sách khách
+                                hàng</a></li>
+                        <li><i class="menu-icon fa fa-th"></i><a href="{{route('customers.create')}}">Thêm mới khách
+                                hàng</a></li>
                     </ul>
                 </li>
                 <li class="menu-item-has-children dropdown">
@@ -149,7 +158,7 @@
 <script src="{{asset('vendors/jqvmap/examples/js/jquery.vmap.sampledata.js')}}"></script>
 <script src="{{asset('vendors/jqvmap/dist/maps/jquery.vmap.world.js')}}"></script>
 <script>
-    (function($) {
+    (function ($) {
         "use strict";
 
         jQuery('#vmap').vectorMap({

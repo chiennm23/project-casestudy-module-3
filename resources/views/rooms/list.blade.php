@@ -12,16 +12,18 @@
         </div>
         <div class=" content mt-3">
             @foreach($rooms as $key => $room)
-                <div class="col-sm-6 col-lg-3">
+                <div class="col-sm-6 col-lg-3 btn">
                     <div
-                        class="card text-white {{($room->status)=='Đang có khách' ? 'bg-flat-color-4' : 'bg-flat-color-1'}}">
+                        class="card text-white {{($room->status)=='Đang có khách' ? 'bg-flat-color-4' : 'bg-flat-color-1'}}
+                        {{($room->status)=='Đang sửa chữa' ? 'bg-flat-color-3' : 'bg-flat-color-1'}}
+                        {{($room->status)=='Đang vệ sinh' ? 'bg-flat-color-5' : 'bg-flat-color-1'}}">
                         <div class="card-body pb-0">
                             <div class="dropdown float-right">
                             </div>
                             <h4 class="mb-0">
                                 <span class="count">{{$room->name}}--{{$room->type}}</span>
                                 <hr>
-                                <p class="text-light">{{$room->status}}</p>
+                                <h3 class="text-light">{{$room->status}}</h3>
                             </h4>
                             <hr/>
                             <p class="text-light">{{$room->price}}</p>
@@ -29,8 +31,8 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="col-12 btn mb-3">
-                                        <a class="btn btn-danger {{($room->status)=='Đang có khách' ? 'd-none' : 'd-inline'}}" href="{{route('booking.index',$room->id)}}">Đặt phòng</a>
-                                        <a class="btn btn-warning {{($room->status)=='Đang có khách' ? 'd-inline' : 'd-none'}}" href="">Trả phòng</a>
+                                        <a class="btn btn-danger {{($room->status)==='Đang có khách' ? 'd-none' : 'd-inline'}}" href="{{route('booking.index',$room->id)}}">Đặt phòng</a>
+                                        <a class="btn btn-warning {{($room->status)==='Đang có khách' ? 'd-inline' : 'd-none'}}" href="{{route('booking.edit',$room->id)}}">Trả phòng</a>
                                     </div>
                                 </div>
                             </div>

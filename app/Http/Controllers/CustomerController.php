@@ -57,4 +57,10 @@ class CustomerController extends Controller
         toastr()->success('Xoá khách hàng thành công');
         return redirect()->route('customers.index');
     }
+
+    public function search(Request $request)
+    {
+        $cards = Customer::where('idCard','LIKE', '%' . $request->card . '%')->get();
+        return response()->json($cards);
+    }
 }

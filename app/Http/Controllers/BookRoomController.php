@@ -41,4 +41,22 @@ class BookRoomController extends Controller
         toastr()->success('Đặt phòng thành công');
         return redirect()->route('rooms.index');
     }
+
+    public function edit($id)
+    {
+        $room = Room::findOrFail($id);
+        $bills= Bill::all();
+        return view('bookings.exitRoom', compact('room','bills'));
+    }
+
+    public function update($id)
+    {
+        $room = Room::findOrFail($id);
+        $room->status= Checkout::CHECKOUT;
+        $room->save();
+
+        toastr()->success('Thanh toán thành công');
+        return redirect()->route('rooms.index');
+
+    }
 }
