@@ -21,6 +21,7 @@
                 <p class="text-danger">{{ $errors->first('name') }}</p>
             @endif
             <div class="form-group">
+
                 <label>Loại Phòng:</label>
                 <select name="type" class="form-control">
                     <option>Phòng Đơn</option>
@@ -28,12 +29,20 @@
                 </select>
             </div>
             <div class="form-group">
-                <label>Giá Phòng:</label>
-                <input type="text" class="form-control" name="price" placeholder="Giá Phòng">
+                <label>Giá Phòng</label>
+                <select name="price"  class="form-control">
+                    <option>100.000/2h</option>
+                    <option>400.000/12h</option>
+                    <option>700.000/Ngày</option>
+                </select>
             </div>
             <div class="form-group">
-                <label>Tình Trạng:</label>
-                <input type="text" class="form-control" name="status" placeholder="Tình Trạng">
+                <label>Tình Trạng</label>
+                <select name="status"  class="form-control">
+                    <option>Đang trống</option>
+                    <option>Đang vệ sinh</option>
+                    <option>Đang sửa chữa</option>
+                </select>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
