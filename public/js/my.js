@@ -27,7 +27,21 @@ $(document).ready(function () {
             $('#ul-card').html('');
         }
     });
-    $('.card-customer')
 
+    $('body').on('click', '.card-customer', function () {
 
+        let idCustomer = $(this).attr('data-id');
+        let location = window.location.origin;
+        $.ajax({
+            url: location + '/customers/' + idCustomer + '/detail',
+            type: 'GET',
+            success: function (result) {
+                console.log(result)
+                $('#name-customer').val(result.name);
+                $('#search-card').val(result.idCard);
+                $('#name-phone').val(result.phone);
+                $('#ul-card').html('');
+            }
+        });
+    });
 });

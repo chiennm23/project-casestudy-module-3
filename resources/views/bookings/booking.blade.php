@@ -33,7 +33,7 @@
                                                                     Tên Khách Hàng <span class="text-danger">*</span>
                                                                 </h5>
                                                                 <div class="controls">
-                                                                    <input type="text"  name="name"
+                                                                    <input type="text" id="name-customer" name="name"
                                                                            class="form-control {{($errors->first('name')) ? 'is-invalid' : ''}}"
                                                                            value="{{old('name')}}">
                                                                     @if($errors->first('name'))
@@ -62,7 +62,7 @@
                                                         <div class="col-12 col-md-6 mb-3">
                                                             <h5 class="{{($errors->first('phone')) ? 'text-danger' : ''}}">
                                                                 Số Điện Thoại<span class="text-danger">*</span></h5>
-                                                            <input type="text"  name="phone"
+                                                            <input type="text"  name="phone" id="name-phone"
                                                                    class="form-control {{($errors->first('phone')) ? 'is-invalid' : ''}}"
                                                                    value="{{old('phone')}}">
                                                             @if($errors->first('phone'))
