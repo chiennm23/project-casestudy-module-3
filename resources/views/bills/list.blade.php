@@ -17,7 +17,7 @@
                         <h1>Danh Sách Bill</h1>
                     </div>
                     <table class="table table-striped table-hover">
-                        <thead>
+                        <thead class="badge-dark">
                         <tr>
                             <th scope="col">#</th>
                             <th scope="col">Phòng</th>

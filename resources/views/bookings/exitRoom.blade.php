@@ -10,7 +10,7 @@
                     <div class="box-body pt-5">
                         <div class="table-responsive">
                             <table id="example1" class="table table-bordered table-striped">
-                                <thead>
+                                <thead class="badge-dark">
                                 <tr>
                                     <th>Phòng</th>
                                     <th>Giá tiền</th>

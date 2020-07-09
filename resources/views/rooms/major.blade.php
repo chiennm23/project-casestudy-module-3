@@ -5,7 +5,7 @@
             <div class="col-sm-4">
                 <div class="page-header float-left">
                     <div class="page-title">
-                        <h1>Room // Major</h1>
+                        <h1>Major</h1>
                     </div>
                 </div>
             </div>
@@ -25,7 +25,7 @@
                         <h1>Danh Sách Phòng</h1>
                     </div>
                     <table class="table table-striped table-hover">
-                        <thead>
+                        <thead class="badge-dark">
                         <tr>
                             <th scope="col">#</th>
                             <th scope="col">Tên Phòng</th>
