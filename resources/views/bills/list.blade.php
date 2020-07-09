@@ -21,6 +21,7 @@
                         <tr>
                             <th scope="col">#</th>
                             <th scope="col">Phòng</th>
+                            <th scope="col">Ngày</th>
                             <th scope="col">Giờ vào</th>
                             <th scope="col">Giờ ra</th>
                             <th scope="col">Tổng tiền</th>
@@ -30,8 +31,9 @@
                         @foreach($bills as $key => $bill)
                             <tr>
                                 <td>{{++$key}}</td>
-                                <td>{{$bill->room_id}}</td>
-                                <td>{{$bill->created_at}}</td>
+                                <td>{{$bill->room->name}}</td>
+                                <td>{{$bill->date}}</td>
+                                <td>{{$bill->TimeStart}}</td>
                                 <td></td>
                                 <td>{{$bill->price}}</td>
                             </tr>

@@ -1,16 +1,11 @@
 $(document).ready(function () {
     $('#search-card').on('keyup', function () {
         let keyword = $(this).val();
-        // $.ajaxSetup({
-        //     headers: {
-        //         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-        //     }
-        // });
         if (keyword) {
             let location = window.location.origin;
             $('#ul-card').html('');
             $.ajax({
-                url: location + '/booking/id/create',
+                url: location + '/customers/search',
                 method: 'GET',
                 type: 'json',
                 data: {
@@ -19,17 +14,20 @@ $(document).ready(function () {
                 success: function (result) {
                     let html = '';
                     $.each(result, function (index, item) {
-                        html += '<li>';
-                        html += item.idCard;
+                        html += '<li class="list-group-item list-group-item-action card-customer" data-id="' + item.id + '">';
+                        html += item.name + '-' + item.idCard;
                         html += '</li>';
-                    })
-                    $('#ul-card').append(html)
+                    });
+                    $('#ul-card').append(html);
                 },
                 error: function (error) {
                 }
-            })
+            });
         } else {
             $('#ul-card').html('');
         }
-    })
+    });
+    $('.card-customer')
+
+
 });

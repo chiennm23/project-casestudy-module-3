@@ -54,7 +54,7 @@
                                                                     @if($errors->first('card'))
                                                                         <p class="text-danger">{{ $errors->first('card') }}</p>
                                                                     @endif
-                                                                    <ul id="ul-card"></ul>
+                                                                    <ul id="ul-card" style="position: absolute ; width: 93%" class="list-group" ></ul>
                                                                 </div>
 
                                                             </div>

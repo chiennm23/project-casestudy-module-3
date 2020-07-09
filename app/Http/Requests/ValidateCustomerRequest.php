@@ -24,9 +24,9 @@ class ValidateCustomerRequest extends FormRequest
     public function rules()
     {
         return [
-            'name'=>'required|min:6|max:18',
+            'name'=>'required|max:18',
             'card'=>'required|min:9|max:12|unique:customers,idCard',
-            'phone'=>'required|unique:customers'
+            'phone'=>'required|unique:customers,phone'
         ];
     }
 
@@ -34,7 +34,6 @@ class ValidateCustomerRequest extends FormRequest
     {
         return [
             'name.required'=>'Tên không được để trống',
-            'name.min'=>'Số kí tự nằm trong khoảng 6-18',
             'name.max'=>'số kí tự nằm trong khoảng 6-18',
             'card.required'=>'CMND không được để trống',
             'card.min'=>'Số kí tự nằm trong khoảng 9-12',
