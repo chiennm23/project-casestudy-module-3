@@ -5,9 +5,8 @@ namespace App\Http\Controllers;
 use App\Customer;
 use App\Http\Requests\ValidateCustomerRequest;
 use App\Http\Services\CustomerService;
-use App\Room;
 use Illuminate\Http\Request;
-use Illuminate\Routing\Controller;
+
 
 class CustomerController extends Controller
 {
@@ -26,11 +25,17 @@ class CustomerController extends Controller
 
     public function create()
     {
+        if (!$this->userCan('admin')) {
+            abort(403,'Bạn không có quyền này');
+        }
         return view('customers.create');
     }
 
     public function store(ValidateCustomerRequest $request)
     {
+        if (!$this->userCan('admin')) {
+            abort(403,'Bạn không có quyền này');
+        }
         $this->customerService->create($request);
         toastr()->success('Thêm khách hàng thành công');
         return redirect()->route('customers.index');
@@ -38,12 +43,18 @@ class CustomerController extends Controller
 
     public function edit($id)
     {
+        if (!$this->userCan('admin')) {
+            abort(403,'Bạn không có quyền này');
+        }
         $customer = $this->customerService->find($id);
         return view('customers.edit', compact('customer'));
     }
 
     public function update(Request $request, $id)
     {
+        if (!$this->userCan('admin')) {
+            abort(403,'Bạn không có quyền này');
+        }
         $customer = $this->customerService->find($id);
         $this->customerService->update($request, $customer);
         toastr()->success('Chỉnh sửa khách hàng thành công');
@@ -52,6 +63,9 @@ class CustomerController extends Controller
 
     public function destroy($id)
     {
+        if (!$this->userCan('admin')) {
+            abort(403,'Bạn không có quyền này');
+        }
         $customer = $this->customerService->find($id);
         $this->customerService->destroy($customer);
         toastr()->success('Xoá khách hàng thành công');

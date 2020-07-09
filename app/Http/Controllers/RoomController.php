@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\ValidateRoomRequest;
 use App\Http\Services\RoomService;
-use App\Room;
 use Illuminate\Http\Request;
 
 class RoomController extends Controller
@@ -30,11 +29,17 @@ class RoomController extends Controller
 
     public function create()
     {
+        if (!$this->userCan('admin')) {
+            abort(403,'Bạn không có quyền này');
+        }
         return view('/rooms/add');
     }
 
     public function store(ValidateRoomRequest $request)
     {
+        if (!$this->userCan('admin')) {
+            abort(403,'Bạn không có quyền này');
+        }
         $this->roomService->create($request);
         toastr()->success('Thêm mới phòng thành công!');
         return redirect()->route('rooms.index');
@@ -56,6 +61,9 @@ class RoomController extends Controller
 
     public function delete($id)
     {
+        if (!$this->userCan('admin')) {
+            abort(403,'Bạn không có quyền này');
+        }
         $room = $this->roomService->find($id);
         $this->roomService->destroy($room);
         toastr()->success('Xoá phòng thành công!');
