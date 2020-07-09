@@ -18,11 +18,18 @@
             </div>
             <div class="form-group">
                 <label>Loại Phòng</label>
-                <input type="text" class="form-control" name="type" placeholder="Loại Phòng" value="{{$room->type}}" readonly>
+                <select name="type"  class="form-control">
+                    <option>Phòng đơn</option>
+                    <option>Phòng đôi</option>
+                </select>
             </div>
             <div class="form-group">
                 <label>Giá Phòng</label>
-                <input type="text" class="form-control" name="price" placeholder="Giá Phòng" value="{{$room->price}}">
+                <select name="price"  class="form-control">
+                    <option>100.000/2h</option>
+                    <option>400.000/12h</option>
+                    <option>700.000/Ngày</option>
+                </select>
             </div>
             <div class="form-group">
                 <label>Tình Trạng</label>
