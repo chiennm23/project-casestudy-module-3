@@ -28,11 +28,23 @@
                             <hr/>
                             <p class="text-light">{{$room->price}}</p>
                             <hr>
-                            <div class="row">
+                            <div class="row ">
                                 <div class="col-12">
-                                    <div class="col-12 btn mb-3">
-                                        <a class="btn btn-danger {{($room->status)==='Đang có khách' ? 'd-none' : 'd-inline'}}" href="{{route('booking.index',$room->id)}}">Đặt phòng</a>
-                                        <a class="btn btn-warning {{($room->status)==='Đang có khách' ? 'd-inline' : 'd-none'}}" href="{{route('booking.edit',$room->id)}}">Trả phòng</a>
+                                    <div class="col-12 btn mb-3 ">
+                                        <a class="btn btn-danger @if(($room->status)==='Đang có khách')
+                                            d-none
+                                            @elseif(($room->status)==='Đang vệ sinh')
+                                            d-none
+                                             @elseif(($room->status)==='Đang sửa chữa')
+                                            d-none
+                                            @else
+                                            d-inline
+                                            @endif"
+                                           href="{{route('booking.index',$room->id)}}">Đặt phòng</a>
+                                        <a class="btn btn-warning {{($room->status)==='Đang có khách' ? 'd-inline' : 'd-none'}}"
+                                           href="{{route('booking.edit',$room->id)}}">Trả phòng</a>
+                                        <a class="btn btn-secondary {{($room->status)==='Đang vệ sinh' ? 'd-inline' : 'd-none'}}
+                                        {{($room->status)==='Đang sửa chữa' ? 'd-inline' : 'd-none'}}">Tạm khoá</a>
                                     </div>
                                 </div>
                             </div>
