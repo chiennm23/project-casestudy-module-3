@@ -44,9 +44,9 @@
                                 <td>{{$room->status}}</td>
 
                                     <td>
-                                        <a href="{{route('rooms.edit', $room->id)}}" class="btn btn-warning">Edit</a>
+                                        <a href="{{route('rooms.edit', $room->id)}}" class="btn btn-warning {{($room->status)==='Đang có khách' ? 'd-none' : 'd-inline'}}">Edit</a>
                                         @can('admin')
-                                        <a href="{{route('rooms.delete', $room->id)}}" class="btn btn-danger"
+                                        <a href="{{route('rooms.delete', $room->id)}}" class="btn btn-danger {{($room->status)==='Đang có khách' ? 'd-none' : 'd-inline'}}"
                                            onclick="return confirm('Bạn chắc chắn muốn xóa?')">Delete</a>
                                         @endcan
                                     </td>
