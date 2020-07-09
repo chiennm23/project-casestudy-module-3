@@ -49,9 +49,7 @@
                                         <a href="{{route('rooms.delete', $room->id)}}" class="btn btn-danger"
                                            onclick="return confirm('Bạn chắc chắn muốn xóa?')">Delete</a>
                                         @endcan
-
                                     </td>
-
                             </tr>
                         @endforeach
                         </tbody>
