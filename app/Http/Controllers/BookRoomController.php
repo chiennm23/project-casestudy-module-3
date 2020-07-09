@@ -17,7 +17,6 @@ class BookRoomController extends Controller
         return view('bookings.booking', compact('room'));
     }
 
-
     public function create(ValidateCustomerRequest $request, $id)
     {
         $room = Room::findOrFail($id);
@@ -28,7 +27,8 @@ class BookRoomController extends Controller
         $customer->save();
 
         $bill = new Bill();
-        $bill->date = Carbon::now()->toDateString();
+        $bill->date = $request->day;
+        $bill->timeStart = $request->time;
         $bill->price = $request->price;
         $bill->room_id = $room->id;
         $bill->save();
@@ -54,9 +54,7 @@ class BookRoomController extends Controller
         $room = Room::findOrFail($id);
         $room->status= Checkout::CHECKOUT;
         $room->save();
-
         toastr()->success('Thanh toán thành công');
         return redirect()->route('rooms.index');
-
     }
 }
