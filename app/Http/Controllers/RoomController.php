@@ -19,11 +19,8 @@ class RoomController extends Controller
     public function index()
     {
         $rooms = $this->roomService->getAll();
-        $count= Room::where('status','Đang trống ')->count();
-        $count1= Room::where('status','Đang có khách  ')->count();
-        $count2= Room::where('status','Đang sửa chữa  ')->count();
-        $count3= Room::where('status','Đang vệ sinh  ')->count();
-        return view('rooms/list', compact('rooms','count','count1','count2','count3'));
+        $count = Room::groupBy('status')->selectRaw('count(*) as total,status')->get();
+        return view('rooms/list', compact('rooms', 'count'));
     }
 
     public function showMajor()
