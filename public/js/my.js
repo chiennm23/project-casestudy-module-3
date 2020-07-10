@@ -44,4 +44,7 @@ $(document).ready(function () {
             }
         });
     });
+    $('#locked').click(function () {
+        alert('1');
+    })
 });
