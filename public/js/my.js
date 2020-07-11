@@ -44,7 +44,4 @@ $(document).ready(function () {
             }
         });
     });
-    $('#locked').click(function () {
-        alert('Phòng đang tạm khoá');
-    })
 });

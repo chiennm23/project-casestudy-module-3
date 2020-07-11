@@ -10,7 +10,7 @@
                 </div>
             </div>
         </div>
-{{--        <div class="col-12 col-md-12 ml-4">--}}
+        <div class="col-12 col-md-12 ml-4">
 {{--            <div class="row">--}}
 {{--                <div class="col-2 btn btn-primary ml-2">--}}
 {{--                    <a href="" class="text-white">Đang trống ({{$count[0]['total']}}) </a>--}}
@@ -25,7 +25,7 @@
 {{--                    <a class="text-white">Đang vệ sinh ({{$count[3]['total']}})</a>--}}
 {{--                </div>--}}
 {{--            </div>--}}
-{{--        </div>--}}
+        </div>
         <div class=" content mt-3 col-12">
             @foreach($rooms as $key => $room)
                 <div class="col-sm-6 col-lg-3 btn">
@@ -49,19 +49,27 @@
                                     <div class="col-12 btn mb-3 ">
                                         <a class="btn btn-danger @if(($room->status)==='Đang có khách')
                                             d-none
-@elseif(($room->status)==='Đang vệ sinh')
+                                            @elseif(($room->status)==='Đang vệ sinh')
                                             d-none
-@elseif(($room->status)==='Đang sửa chữa')
+                                            @elseif(($room->status)==='Đang sửa chữa')
                                             d-none
-@else
+                                            @else
                                             d-inline
-@endif"
-                                           href="{{route('booking.index',$room->id)}}">Đặt phòng</a>
+                                            @endif"
+                                           href="{{route('booking.index',$room->id)}}">
+                                            Đặt phòng
+                                        </a>
                                         <a class="btn btn-warning {{($room->status)==='Đang có khách' ? 'd-inline' : 'd-none'}}"
                                            href="{{route('booking.edit',$room->id)}}">Trả phòng</a>
-                                        <a class="btn btn-secondary {{($room->status)==='Đang vệ sinh' ? 'd-inline' : 'd-none'}}
-                                        {{($room->status)==='Đang sửa chữa' ? 'd-inline' : 'd-none'}}" id="locked">Tạm
-                                            khoá</a>
+                                        <a class="btn btn-secondary @if(($room->status)==='Đang vệ sinh')
+                                            d-inline
+                                            @elseif(($room->status)==='Đang sửa chữa')
+                                            d-inline
+                                             @else
+                                            d-none
+                                            @endif" id="locked">
+                                            Tạm khoá
+                                        </a>
                                     </div>
                                 </div>
                             </div>
