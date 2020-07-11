@@ -49,6 +49,10 @@ Route::middleware('auth')->group(function () {
     Route::prefix('bills')->group(function () {
         Route::get('/', 'BillController@index')->name('bills.index');
     });
+
+    Route::prefix('users')->group(function () {
+        Route::get('/', 'UserController@index')->name('users.index');
+    });
 });
 
 

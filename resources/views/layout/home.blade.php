@@ -49,6 +49,7 @@
                        aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Bills</a>
                     <ul class="sub-menu children dropdown-menu">
                         <li><i class="fa fa-table"></i><a href="{{route('bills.index')}}">Danh sách các hóa đơn</a></li>
+                        <li><i class="fa fa-table"></i><a href="{{route('users.index')}}">Danh sách users</a></li>
                     </ul>
                 </li>
                 <li class="menu-item-has-children dropdown">
