@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="col-2 btn btn-primary ml-2">
+    <a href="" class="text-white">Đang trống ({{$count[0]['total']}}) </a>
+</div>
+<div class="col-2 btn btn-danger ml-2">
+    <a class="text-white">Đang có khách ({{$count[2]['total']}}) </a>
+</div>
+<div class="col-2 btn btn-warning ml-2">
+    <a class="text-white">Đang sửa chữa ({{$count[1]['total']}})</a>
+</div>
+<div class="col-2 btn btn-success ml-2">
+    <a class="text-white">Đang vệ sinh ({{$count[3]['total']}})</a>
+</div>
+</body>
+</html>

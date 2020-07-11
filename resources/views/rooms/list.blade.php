@@ -10,22 +10,22 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 col-md-12 ml-4">
-            <div class="row">
-                <div class="col-2 btn btn-primary ml-2">
-                    <a href="" class="text-white">Đang trống ({{$count[3]['total']}}) </a>
-                </div>
-                <div class="col-2 btn btn-danger ml-2">
-                    <a class="text-white">Đang có khách ({{$count[1]['total']}}) </a>
-                </div>
-                <div class="col-2 btn btn-warning ml-2">
-                    <a class="text-white">Đang sửa chữa ({{$count[2]['total']}})</a>
-                </div>
-                <div class="col-2 btn btn-success ml-2">
-                    <a class="text-white">Đang vệ sinh ({{$count[0]['total']}})</a>
-                </div>
-            </div>
-        </div>
+{{--        <div class="col-12 col-md-12 ml-4">--}}
+{{--            <div class="row">--}}
+{{--                <div class="col-2 btn btn-primary ml-2">--}}
+{{--                    <a href="" class="text-white">Đang trống ({{$count[0]['total']}}) </a>--}}
+{{--                </div>--}}
+{{--                <div class="col-2 btn btn-danger ml-2">--}}
+{{--                    <a class="text-white">Đang có khách ({{$count[2]['total']}}) </a>--}}
+{{--                </div>--}}
+{{--                <div class="col-2 btn btn-warning ml-2">--}}
+{{--                    <a class="text-white">Đang sửa chữa ({{$count[1]['total']}})</a>--}}
+{{--                </div>--}}
+{{--                <div class="col-2 btn btn-success ml-2">--}}
+{{--                    <a class="text-white">Đang vệ sinh ({{$count[3]['total']}})</a>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
         <div class=" content mt-3 col-12">
             @foreach($rooms as $key => $room)
                 <div class="col-sm-6 col-lg-3 btn">
