@@ -67,6 +67,7 @@ class RoomController extends Controller
             abort(403, 'Bạn không có quyền này');
         }
         $room = $this->roomService->find($id);
+        $room->bills()->detach();
         $this->roomService->destroy($room);
         toastr()->success('Xoá phòng thành công!');
         return redirect()->route('rooms.major');
