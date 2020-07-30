@@ -21,4 +21,19 @@ class BillController extends Controller
         $bills = $this->billService->getAll();
         return view('/bills/list', compact('bills'));
     }
+
+    public function edit($id)
+    {
+        $bill = $this->billService->findById($id);
+        return view('bills.edit', compact('bill'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        $bill = $this->billService->findById($id);
+        $this->billService->update($request, $bill);
+
+        toastr()->success('Update thanh toan thành công');
+        return redirect()->route('rooms.index');
+    }
 }

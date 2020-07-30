@@ -26,6 +26,7 @@ Route::middleware('auth')->group(function () {
         Route::get('/{id}/edit', 'RoomController@edit')->name('rooms.edit');
         Route::post('/{id}/edit', 'RoomController@update')->name('rooms.update');
         Route::get('/{id}/delete', 'RoomController@delete')->name('rooms.delete');
+        Route::get('/{status}/search', 'RoomController@searchByStatus')->name('rooms.search');
     });
 
     Route::prefix('customers')->group(function () {
@@ -48,6 +49,8 @@ Route::middleware('auth')->group(function () {
 
     Route::prefix('bills')->group(function () {
         Route::get('/', 'BillController@index')->name('bills.index');
+        Route::get('/{id}/create', 'BillController@edit')->name('bills.edit');
+        Route::post('/{id}/create', 'BillController@update')->name('bills.update');
     });
 
     Route::prefix('users')->group(function () {

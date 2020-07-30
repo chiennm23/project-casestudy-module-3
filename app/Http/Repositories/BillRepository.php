@@ -25,4 +25,14 @@ class BillRepository
         $bill->save();
     }
 
+    public function findById($id)
+    {
+        return $this->billModel->findOrFail($id);
+    }
+
+    public function delete($customer)
+    {
+        $customer->delete();
+    }
+
 }

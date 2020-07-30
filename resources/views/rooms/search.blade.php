@@ -5,8 +5,7 @@
             <div class="col-sm-12">
                 <div class="page-header float-left">
                     <div class="page-title">
-                        <h1><a class="btn btn-success"
-                               href="{{route('rooms.index')}}">Rooms: ({{$sum}} Phòng) </a></h1>
+                        <h1><a class="btn btn-success" href="{{route('rooms.index')}}">Tất Cả</a></h1>
                     </div>
                 </div>
             </div>
@@ -82,3 +81,4 @@
             @endforeach
         </div>
 @endsection
+

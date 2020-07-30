@@ -66,6 +66,7 @@ class BookRoomController extends Controller
     {
         $room = $this->roomService->find($id);
         $room->status= Checkout::CHECKOUT;
+        $room->timeOut=Carbon::now()->toTimeString();
         $this->roomService->save($room);
         toastr()->success('Thanh toán thành công');
         return redirect()->route('rooms.index');

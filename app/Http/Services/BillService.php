@@ -25,4 +25,19 @@ class BillService
         $bill->save();
     }
 
+    public function findById($id)
+    {
+        return $this->billRepo->findById($id);
+    }
+
+    public function update($request, $bill)
+    {
+        $bill->date = $request->date;
+        $bill->TimeStart = $request->timeStart;
+        $bill->price = $request->price;
+        $bill->timeOut= $bill->room()->timeOut;
+        $bill->status= $request->status;
+        $this->billRepo->save($bill);
+    }
+
 }

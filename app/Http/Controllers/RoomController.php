@@ -19,8 +19,13 @@ class RoomController extends Controller
     public function index()
     {
         $rooms = $this->roomService->getAll();
-        $count = Room::groupBy('status')->selectRaw('count(*) as total,status')->get();
-        return view('rooms/list', compact('rooms', 'count'));
+//        $count = Room::groupBy('status')->selectRaw('count(*) as total,status')->get();
+        $count1 = Room::where('status', 'Đang trống')->count();
+        $count2 = Room::where('status', 'Đang có khách')->count();
+        $count3 = Room::where('status', 'Đang vệ sinh')->count();
+        $count4 = Room::where('status', 'Đang sửa chữa')->count();
+        $sum = $count1 + $count2 + $count3 + $count4;
+        return view('rooms/list', compact('rooms', 'count1', 'count2', 'count3', 'count4','sum'));
     }
 
     public function showMajor()
@@ -71,5 +76,16 @@ class RoomController extends Controller
         toastr()->success('Xoá phòng thành công!');
         return redirect()->route('rooms.major');
     }
+
+    public function searchByStatus($status)
+    {
+        $rooms = Room::where('status', $status)->get();
+        $count1 = Room::where('status', 'Đang trống')->count();
+        $count2 = Room::where('status', 'Đang có khách')->count();
+        $count3 = Room::where('status', 'Đang vệ sinh')->count();
+        $count4 = Room::where('status', 'Đang sửa chữa')->count();
+        return view('rooms.search', compact('rooms', 'count1', 'count2', 'count3', 'count4'));
+    }
+
 
 }
