@@ -40,6 +40,7 @@
                 </select>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
+            <button class="btn btn-secondary" onclick="window.history.go(-1); return false;">Cancel</button>
         </form>
     </div>
 @endsection

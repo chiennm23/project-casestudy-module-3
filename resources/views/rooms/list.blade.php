@@ -13,18 +13,18 @@
         </div>
         <div class="col-12 col-md-12 ml-4">
             <div class="row">
-                <div class="col-2 btn btn-primary ml-2">
+                <div class="col-2 btn btn-primary ml-2 {{$count1 !== 0 ? 'd-inline' : 'd-none'}}">
                     <a href="{{route('rooms.search','Đang trống')}}" class="text-white">Đang trống ({{$count1}}) </a>
                 </div>
-                <div class="col-2 btn btn-danger ml-2">
+                <div class="col-2 btn btn-danger ml-2 {{$count2 !== 0 ? 'd-inline' : 'd-none'}}">
                     <a href="{{route('rooms.search','Đang có khách')}}" class="text-white">Đang có khách ({{$count2}}
                         ) </a>
                 </div>
-                <div class="col-2 btn btn-warning ml-2">
+                <div class="col-2 btn btn-warning ml-2 {{$count4 !== 0 ? 'd-inline' : 'd-none'}}">
                     <a href="{{route('rooms.search','Đang sửa chữa')}}" class="text-white">Đang sửa chữa ({{$count4}}
                         )</a>
                 </div>
-                <div class="col-2 btn btn-success ml-2">
+                <div class="col-2 btn btn-success ml-2 {{$count3 !== 0 ? 'd-inline' : 'd-none'}}">
                     <a class="text-white" href="{{route('rooms.search','Đang vệ sinh')}}">Đang vệ sinh ({{$count3}})</a>
                 </div>
             </div>

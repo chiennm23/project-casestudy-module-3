@@ -15,7 +15,7 @@
                 <div class="col-2 btn btn-primary ml-2">
                     <a href="{{route('rooms.search','Đang trống')}}" class="text-white">Đang trống ({{$count1}}) </a>
                 </div>
-                <div class="col-2 btn btn-danger ml-2">
+                <div class="col-2 btn btn-danger ml-2 ">
                     <a href="{{route('rooms.search','Đang có khách')}}" class="text-white">Đang có khách ({{$count2}}
                         ) </a>
                 </div>
