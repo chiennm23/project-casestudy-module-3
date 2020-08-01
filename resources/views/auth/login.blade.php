@@ -5,11 +5,11 @@
         <form method="POST" action="{{ route('login') }}">
             @csrf
             <h1 class="h3 mb-3 font-weight-normal" style="text-align: center"> Sign in</h1>
-            <div class="social-login">
-                <button class="btn facebook-btn social-btn" type="button"><span><i class="fab fa-facebook-f"></i> Sign in with Facebook</span> </button>
-                <button class="btn google-btn social-btn" type="button"><span><i class="fab fa-google-plus-g"></i> Sign in with Google+</span> </button>
-            </div>
-            <p style="text-align:center"> OR  </p>
+{{--            <div class="social-login">--}}
+{{--                <button class="btn facebook-btn social-btn" type="button"><span><i class="fab fa-facebook-f"></i> Sign in with Facebook</span> </button>--}}
+{{--                <button class="btn google-btn social-btn" type="button"><span><i class="fab fa-google-plus-g"></i> Sign in with Google+</span> </button>--}}
+{{--            </div>--}}
+{{--            <p style="text-align:center"> OR  </p>--}}
             <input id="inputEmail" placeholder="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
             @error('email')
             <span class="invalid-feedback" role="alert">
@@ -32,7 +32,7 @@
 
             <hr>
             @if (Route::has('register'))
-                <a class="nav-link btn btn-primary  btn-block" href="{{ route('register') }}"><i class="fas fa-user-plus"></i>{{ __('Register') }}</a>
+                <a class="nav-link btn btn-primary  btn-block text-white" href="{{ route('register') }}"><i class="fas fa-user-plus"></i>{{ __('Register') }}</a>
             @endif
         </form>
     </div>
